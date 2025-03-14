@@ -512,7 +512,7 @@ main {
  * #service 
  */
 
-.service { margin-bottom: 35px; }
+.service { margin-bottom: 0; }
 
 .service-title { margin-bottom: 20px; }
 
