@@ -5,12 +5,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
+  <title>Usman Aziz</title>
+  
 
   <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/images/my-image.png" type="image/x-icon">
+
+ <!--
+    - AOS library link
+  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
 
   <!--
     - custom css link
@@ -30,8 +38,11 @@
   <!--
     - #MAIN
   -->
+  <div id="preloader">
+    <h1 class="preloader-text"></h1>
+</div>
 
-  <main>
+  <main id="main-content" class="hidden">
 
     <!--
       - #SIDEBAR
@@ -49,6 +60,9 @@
           <h1 class="name" title="Usman Aziz">Usman Aziz</h1>
 
           <p class="title">Senior Frontend Developer</p>
+          <a href="https://drive.google.com/file/d/1X88sjCnWNnq2UzUqogkEjlwf-sNYZXAb/view?usp=sharing" download="Usman_Aziz_Resume.pdf" class="download-btn">
+            View Resume
+          </a>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -243,7 +257,7 @@
 
           <ul class="service-list">
 
-            <li class="service-item">
+            <li class="service-item ">
 
               <div class="service-icon-box">
                 <img src="./assets/images/icon-design.svg

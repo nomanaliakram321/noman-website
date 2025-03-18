@@ -1,4 +1,36 @@
 'use strict';
+document.addEventListener("DOMContentLoaded", function () {
+  AOS.init({
+    once: true
+  });
+});
+document.addEventListener("DOMContentLoaded", function () {
+  const text = "Usman Aziz";
+  let index = 0;
+  const preloaderText = document.querySelector(".preloader-text");
+  const preloader = document.getElementById("preloader");
+  const mainContent = document.getElementById("main-content");
+
+  function typeEffect() {
+      if (index < text.length) {
+          preloaderText.innerHTML += text.charAt(index);
+          index++;
+          setTimeout(typeEffect, 200); // Adjust typing speed
+      } else {
+          setTimeout(() => {
+              preloader.style.opacity = "0"; // Fade out
+              setTimeout(() => {
+                  preloader.style.display = "none"; // Hide preloader
+                  mainContent.classList.remove("hidden"); // Show main content
+                  mainContent.style.opacity = "1"; // Fade in
+              }, 400); // Delay for smooth transition
+          }, 700); // Wait after typing effect
+      }
+  }
+
+  typeEffect(); // Start animation
+});
+
 
 
 
