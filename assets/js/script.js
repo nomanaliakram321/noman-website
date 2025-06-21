@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 document.addEventListener("DOMContentLoaded", function () {
-  const text = "Usman Aziz";
+  const text = "Noman Akram";
   let index = 0;
   const preloaderText = document.querySelector(".preloader-text");
   const preloader = document.getElementById("preloader");
