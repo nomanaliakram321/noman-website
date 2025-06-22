@@ -1,357 +1,457 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Noman Akram</title>
-
-
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/my-image.png" type="image/x-icon">
-  <!-- Ionicons CDN -->
-  <!-- Ionicons Library -->
-  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
-  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" /> -->
-  <!-- ✅ KEEP THESE -->
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-
-
-
-
-  <!--
-    - AOS library link
-  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-</head>
-
-<body>
-
-  <!--
-    - #MAIN
-  -->
-  <div id="preloader">
-    <h1 class="preloader-text"></h1>
-  </div>
-
-  <main id="main-content" class="hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noman Akram</title>
 
     <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/my-image.png"
+      type="image/x-icon"
+    />
+    <!-- Ionicons CDN -->
+    <!-- Ionicons Library -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+    ></script>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" /> -->
+    <!-- ✅ KEEP THESE -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!--
+    - AOS library link
+  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--
+    - #MAIN
+  -->
+    <div id="preloader">
+      <h1 class="preloader-text"></h1>
+    </div>
+
+    <main id="main-content" class="hidden">
+      <!--
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my-image.png"
+              alt="Richard hanrick"
+              width="80"
+              style="border-radius: 20px"
+            />
+          </figure>
 
-      <div class="sidebar-info">
+          <div class="info-content">
+            <h1 class="name" title="Noman Akram">Noman Akram</h1>
 
-        <figure class="avatar-box">
-          <img src="./assets/images/my-image.png" alt="Richard hanrick" width="80" style="border-radius: 20px;">
-        </figure>
+            <p class="title">Senior Mobile Application Developer</p>
+            <a
+              href="https://drive.google.com/file/d/1X88sjCnWNnq2UzUqogkEjlwf-sNYZXAb/view?usp=sharing"
+              download="Usman_Aziz_Resume.pdf"
+              class="download-btn"
+            >
+              View Resume
+            </a>
+          </div>
 
-        <div class="info-content">
-          <h1 class="name" title="Noman Akram">Noman Akram</h1>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
 
-          <p class="title">Senior Mobile Application Developer</p>
-          <a href="https://drive.google.com/file/d/1X88sjCnWNnq2UzUqogkEjlwf-sNYZXAb/view?usp=sharing"
-            download="Usman_Aziz_Resume.pdf" class="download-btn">
-            View Resume
-          </a>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
 
-      </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
 
-      <div class="sidebar-info_more">
+                <a href="mailto:nomanakram1999@gmail.com" class="contact-link"
+                  >nomanakram1999@gmail.com</a
+                >
+              </div>
+            </li>
 
-        <div class="separator"></div>
+            <!-- <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
 
-        <ul class="contacts-list">
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
 
-          <li class="contact-item">
+                <a href="tel:+923096313133" class="contact-link"
+                  >+92 3082692744</a
+                >
+              </div>
+            </li> -->
 
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
+            <!-- <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
 
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
 
-              <a href="mailto:usmanaziz.designer@gmail.com" class="contact-link">noman-akram1999@gmail.com</a>
-            </div>
+                <time datetime="1982-06-23">Apr 1, 1999</time>
+              </div>
+            </li> -->
 
-          </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
 
-          <li class="contact-item">
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
 
-            <div class="icon-box">
-              <ion-icon name="call-outline"></ion-icon>
-            </div>
+                <address>Garden Town, Lahore, Pakistan</address>
+              </div>
+            </li>
+          </ul>
 
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
+          <div class="separator"></div>
 
-              <a href="tel:+923096313133" class="contact-link">+92 3096313133</a>
-            </div>
+          <ul class="social-list">
+            <!-- <li class="social-item">
+              <a
+                href="https://www.facebook.com/share/194SqFkYqp/"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li> -->
 
-          </li>
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/noman-akram-51b635125"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
 
-          <li class="contact-item">
+            <li class="social-item">
+              <a
+                href="https://github.com/nomanaliakram321/"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
 
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
+            <!-- <li class="social-item">
+              <a
+                href="https://wa.me/923082692744"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-whatsapp"></ion-icon>
+              </a>
+            </li> -->
+          </ul>
+        </div>
+      </aside>
 
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">Nov 13, 1998</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Nawab Town, Lahore, Pakistan</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-          <li class="social-item">
-            <a href="https://www.facebook.com/share/194SqFkYqp/" class="social-link" target="_blank">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/usman-aziz-designer" class="social-link" target="_blank">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://github.com/UsmanDesigner/" class="social-link" target="_blank">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://wa.me/923096313133" class="social-link" target="_blank">
-              <ion-icon name="logo-whatsapp"></ion-icon>
-            </a>
-          </li>
-        </ul>
-
-
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
+      <!--
       - #main-content
     -->
 
-    <div class="main-content">
-
-      <!--
+      <div class="main-content">
+        <!--
         - #NAVBAR
       -->
 
-      <nav class="navbar">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
 
-        <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Expertise</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Expertise</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <!-- <li class="navbar-item">
+            <!-- <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Blog</button>
           </li> -->
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
 
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
+        <!--
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
+          <section class="about-text">
+            <p>
+              I'm a dedicated Mobile App Developer with 4.5 years of hands-on
+              experience building cross-platform mobile applications using React
+              Native and Flutter. I specialize in crafting clean, efficient, and
+              scalable mobile solutions that deliver real value to users and
+              businesses alike.
+            </p>
+            <p>
+              Throughout my career, I’ve worked on a variety of mobile
+              projects—from simple utility apps to full-featured,
+              production-level applications. I love turning complex ideas into
+              smooth, user-friendly mobile experiences, and I’m especially
+              passionate about Flutter’s design freedom and performance, which I
+              believe is shaping the future of mobile development.
+            </p>
+            <p>
+              Whether you're a startup or an established business, I’m ready
+              to bring your mobile app vision to life with precision, speed, and
+              a deep understanding of modern development practices.
+            </p>
+          </section>
 
-        <section class="about-text">
-          <p>
-            I'm a Senior Mobile Application Developer with 4+ years of experience, specializing in Flutter and React
-            Native. I build high-performance, cross-platform mobile apps focused on responsive UI, smooth animations,
-            and seamless user experiences.
+          <section class="milestones">
+            <h3 class="h3 milestones-title">🚀 Milestones & Achievements</h3>
+            
+            <div class="milestone-list">
+              <div class="milestone-item">
+                <div class="milestone-number">4.5+</div>
+                <div class="milestone-text">YEARS OF EXPERIENCE</div>
+              </div>
 
-          </p>
+              <div class="milestone-item">
+                <div class="milestone-number">+50</div>
+                <div class="milestone-text">PROJECTS COMPLETED</div>
+              </div>
 
-          <p>
-            I'm fluent in state management (BLoC, Provider, Redux), backend integration (Firebase, REST APIs), and
-            native bridges when needed. My workflow is built around speed and quality: Git, CI/CD, automated testing,
-            and agile iteration.design thinking, fast iteration, and building things that users love.
-          </p>
+              <div class="milestone-item">
+                <div class="milestone-number">+20</div>
+                <div class="milestone-text">WORLDWIDE CLIENTS</div>
+              </div>
+            </div>
+          </section>
 
-          <p>
-            Beyond code, I think like a product owner—solving problems with empathy, clarity, and an eye on business
-            goals. I love working with teams who value With a strong focus on performance, UX, and pixel-perfect design,
-            I continuously explore the latest in mobile technology to deliver impactful, user-first applications.
-          </p>
+          <section class="strategy">
+            <h3 class="h3 strategy-title">Strategic Implementation Pathway</h3>
+            
+            <div class="strategy-list">
+              <div class="strategy-item">
+                <div class="strategy-icon-box">
+                  <ion-icon name="search-outline"></ion-icon>
+                </div>
+                <h4 class="h4 strategy-item-title">Planning & Strategy</h4>
+                <p class="strategy-item-text">
+                  I analyze your goals, target users, and key features to create a roadmap for your app's success.
+                </p>
+              </div>
 
-        </section>
+              <div class="strategy-item">
+                <div class="strategy-icon-box">
+                  <ion-icon name="color-palette-outline"></ion-icon>
+                </div>
+                <h4 class="h4 strategy-item-title">Pixel-Perfect UI/UX Design</h4>
+                <p class="strategy-item-text">
+                  I create intuitive, visually appealing, and user-friendly interfaces that enhance engagement and usability.
+                </p>
+              </div>
 
+              <div class="strategy-item">
+                <div class="strategy-icon-box">
+                  <ion-icon name="code-slash-outline"></ion-icon>
+                </div>
+                <h4 class="h4 strategy-item-title">Efficient Development & Seamless Integration</h4>
+                <p class="strategy-item-text">
+                  I build high-performance, scalable applications with clean, maintainable code. I integrate essential features like API connections, third-party services, and IAP to enhance functionality.
+                </p>
+              </div>
 
-        <!--
+              <div class="strategy-item">
+                <div class="strategy-icon-box">
+                  <ion-icon name="rocket-outline"></ion-icon>
+                </div>
+                <h4 class="h4 strategy-item-title">Launch & Post-Launch Support</h4>
+                <p class="strategy-item-text">
+                  I ensure a hassle-free deployment and provide ongoing updates, optimizations, and support to keep your app running flawlessly.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!--
           - service
         -->
 
-        <section class="service">
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing</h3>
 
-          <h3 class="h3 service-title">What i'm doing</h3>
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg
+                "
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
 
-          <ul class="service-list">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web design</h4>
 
-            <li class="service-item ">
+                  <p class="service-item-text">
+                    The most modern and high-quality design made at a
+                    professional level.
+                  </p>
+                </div>
+              </li>
 
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web development</h4>
 
-                <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
-                </p>
-              </div>
+                  <p class="service-item-text">
+                    High-quality development of sites at the professional level.
+                  </p>
+                </div>
+              </li>
 
-            </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-app.svg"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
 
-            <li class="service-item">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Mobile apps</h4>
 
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
+                  <p class="service-item-text">
+                    Professional development of applications for iOS and
+                    Android.
+                  </p>
+                </div>
+              </li>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-api.svg"
+                    alt="API integration icon"
+                    width="40"
+                  />
+                </div>
 
-                <p class="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
-              </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title"
+                    >API Integration & State Management</h4
+                  >
+                  <p class="service-item-text">
+                    Connecting web apps with APIs and managing state with Redux,
+                    Vuex, or Zustand.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
 
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-api.svg" alt="API integration icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">API Integration & State Management</h4>
-                <p class="service-item-text">
-                  Connecting web apps with APIs and managing state with Redux, Vuex, or Zustand.
-                </p>
-              </div>
-            </li>
-
-
-          </ul>
-
-        </section>
-
-
-        <!--
+          <!--
           - testimonials
         -->
 
-        <!-- <section class="testimonials">
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">What Clients Say About My Work</h3>
+
+            <div class="testimonials-list">
+              <div class="testimonial-item">
+                <div class="client-info">
+                  <img src="./assets/images/company.png" alt="Bigscal Technologies" class="client-logo" width="60" height="60">
+                  <h4 class="h4 client-name">Cogentlabs Pvt. Ltd.</h4>
+                </div>
+                <div class="testimonial-text">
+                  <p>
+                    Noman was an active and dedicated team member during his tenure at Bigscal Technologies Pvt. Ltd. He
+                    consistently demonstrated the ability to work under pressure, plan efficiently, and meet tight deadlines.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
 
           <h3 class="h3 testimonials-title">Testimonials</h3>
 
@@ -447,738 +547,861 @@
 
           </ul>
 
-        </section> -->
+        </section> 
 
-
-        <!--
+          <!--
           - testimonials modal
         -->
 
-        <div class="modal-container" data-modal-container>
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
 
-          <div class="overlay" data-overlay></div>
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
 
-          <section class="testimonials-modal">
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
 
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
               </div>
 
-            </div>
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
 
-          </section>
+                <time datetime="2021-06-14">14 June, 2021</time>
 
-        </div>
+                <div data-modal-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were
+                    very pleased with the work done. She has a lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum
+                    dolor sit amet, ullamcous cididt consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels
+                    dolore magnarels alia.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </article>
 
-
-
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
 
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <h3 class="h3">Experience</h3>
             </div>
 
-            <h3 class="h3">Experience</h3>
-          </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Cogentlabs</h4>
+                <span>April 2024 — Present</span>
+                <p class="timeline-text">
+                  As a Flutter mentor, I facilitate the trainee's proficiency in cross-platform mobile app
+                  development by imparting knowledge, offering hands-on coding assistance, and guiding the
+                  construction of efficient Flutter applications to foster their competence and confidence.
+                </p>
+              </li>
 
-          <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">TEKHQs</h4>
+                <span>Oct 2023 — Present</span>
+                <p class="timeline-text">
+                  Currently working as a Senior Frontend Software Engineer at
+                  MentorSol, contributing to 7+ business products. Developed and
+                  deployed a chatbot system to enhance customer interaction and
+                  built a social networking platform similar to LinkedIn and
+                  Facebook. Designed and integrated a gallery feature, optimized
+                  SEO for improved visibility, and implemented Nuxt store for
+                  efficient data management.
+                </p>
+              </li>
 
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">MentorSol Technologies</h4>
-              <span>Oct 2023 — Present</span>
-              <p class="timeline-text">
-                Currently working as a Senior Frontend Software Engineer at MentorSol, contributing to 7+ business
-                products. Developed and deployed
-                a chatbot system to enhance customer interaction and built a social networking platform similar to
-                LinkedIn and Facebook.
-                Designed and integrated a gallery feature, optimized SEO for improved visibility, and implemented Nuxt
-                store for
-                efficient data management.
-              </p>
-            </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Cherrybyte Technologies</h4>
+                <span>May 2023 — Oct 2023</span>
+                <p class="timeline-text">
+                  Worked as a Frontend Software Engineer at Evolvers Tech,
+                  developing reusable and efficient React components. Integrated
+                  state management using Redux and Context API. Built responsive
+                  UIs, implemented client-side routing, and used Ant Design for
+                  a modern, customizable UI. Set up CI/CD pipelines and ensured
+                  code quality through reviews.
+                </p>
+              </li>
 
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Evolvers Tech</h4>
-              <span>May 2023 — Oct 2023</span>
-              <p class="timeline-text">
-                Worked as a Frontend Software Engineer at Evolvers Tech, developing reusable and efficient React
-                components.
-                Integrated state management using Redux and Context API. Built responsive UIs, implemented client-side
-                routing,
-                and used Ant Design for a modern, customizable UI. Set up CI/CD pipelines and ensured code quality
-                through reviews.
-              </p>
-            </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Tkxel(Contract Base)</h4>
+                <span>May 2021 — May 2023</span>
+                <p class="timeline-text">
+                  Served as a Frontend Software Engineer at Taknik Webwares,
+                  contributing to two business products used by thousands.
+                  Managed React state using Redux, worked on SEO optimizations
+                  with React Helmet, and implemented internationalization using
+                  i18next. Integrated CI/CD pipelines with GitHub Actions and
+                  performed unit testing with Jest and Cypress.
+                </p>
+              </li>
 
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Taknik Webwares</h4>
-              <span>May 2021 — May 2023</span>
-              <p class="timeline-text">
-                Served as a Frontend Software Engineer at Taknik Webwares, contributing to two business products used by
-                thousands.
-                Managed React state using Redux, worked on SEO optimizations with React Helmet, and implemented
-                internationalization
-                using i18next. Integrated CI/CD pipelines with GitHub Actions and performed unit testing with Jest and
-                Cypress.
-              </p>
-            </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title"
+                  >HiQ Solutions (Internship)</h4
+                >
+                <span>Aug 2020 — May 2021</span>
+                <p class="timeline-text">
+                  Worked as a Web Developer & React Native Intern, creating a
+                  "Find Worker" application along with REST APIs. Developed 8
+                  high-quality HTML pages and gained experience in React Native,
+                  Material UI, and Bootstrap.
+                </p>
+              </li>
 
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">HiQ Solutions (Internship)</h4>
-              <span>Aug 2020 — May 2021</span>
-              <p class="timeline-text">
-                Worked as a Web Developer & React Native Intern, creating a "Find Worker" application along with REST
-                APIs.
-                Developed 8 high-quality HTML pages and gained experience in React Native, Material UI, and Bootstrap.
-              </p>
-            </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title"
+                  >Freelance Graphic Designer</h4
+                >
+                <span>Aug 2017 — May 2020</span>
+                <p class="timeline-text">
+                  Worked as a freelance graphic designer on Fiverr and Upwork,
+                  designing website logos, flyers, mockups, and vector art.
+                  Collaborated with clients to understand their needs and
+                  delivered high-quality designs using Adobe Photoshop,
+                  Illustrator, and XD.
+                </p>
+              </li>
+            </ol>
+          </section>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
 
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Freelance Graphic Designer</h4>
-              <span>Aug 2017 — May 2020</span>
-              <p class="timeline-text">
-                Worked as a freelance graphic designer on Fiverr and Upwork, designing website logos, flyers, mockups,
-                and vector art.
-                Collaborated with clients to understand their needs and delivered high-quality designs using Adobe
-                Photoshop, Illustrator, and XD.
-              </p>
-            </li>
-
-          </ol>
-
-
-        </section>
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <h3 class="h3">Education</h3>
             </div>
 
-            <h3 class="h3">Education</h3>
-          </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">University of Sargodha</h4>
 
-          <ol class="timeline-list">
+                <span>2017 — 2021</span>
 
-            <li class="timeline-item">
+                <p class="timeline-text">
+                  I completed my Bachelor's degree in Software Engineering at
+                  the University of Sargodha. During my studies, I gained
+                  expertise in programming, web development, and software design
+                  principles.
+                </p>
+              </li>
 
-              <h4 class="h4 timeline-item-title">University of Sargodha</h4>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title"
+                  >Acme College of Excellence, Sargodha</h4
+                >
+                <span>2015 — 2017</span>
+                <p class="timeline-text">
+                  I completed my F.Sc Pre-Engineering at Acme College of
+                  Excellence, Sargodha. During this time, I developed a strong
+                  foundation in mathematics, physics, and chemistry, which
+                  helped me pursue a career in software engineering.
+                </p>
+              </li>
 
-              <span>2017 — 2021</span>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title"
+                  >Sky International High School, Sargodha</h4
+                >
+                <span>2013 — 2015</span>
+                <p class="timeline-text">
+                  I completed my matriculation in Science from Sky International
+                  High School, Sargodha. This period laid the foundation for my
+                  interest in technology and problem-solving.
+                </p>
+              </li>
+            </ol>
+          </section>
 
-              <p class="timeline-text">
-                I completed my Bachelor's degree in Software Engineering at the University of Sargodha. During my
-                studies, I gained
-                expertise in programming, web development, and software design principles.
-              </p>
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
 
-            </li>
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">React.js</h5>
+                  <data value="90">90%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
 
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Acme College of Excellence, Sargodha</h4>
-              <span>2015 — 2017</span>
-              <p class="timeline-text">
-                I completed my F.Sc Pre-Engineering at Acme College of Excellence, Sargodha. During this time, I
-                developed a strong foundation in mathematics, physics, and chemistry, which helped me pursue a career in
-                software engineering.
-              </p>
-            </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Vue.js / Nuxt.js</h5>
+                  <data value="85">85%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 85%"></div>
+                </div>
+              </li>
 
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">JavaScript / TypeScript</h5>
+                  <data value="88">88%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 88%"></div>
+                </div>
+              </li>
 
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Sky International High School, Sargodha</h4>
-              <span>2013 — 2015</span>
-              <p class="timeline-text">
-                I completed my matriculation in Science from Sky International High School, Sargodha. This period laid
-                the foundation for my interest in technology and problem-solving.
-              </p>
-            </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Redux / Pinia /Context API</h5>
+                  <data value="80">90%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
 
-          </ol>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5"
+                    >Tailwind CSS / Chakra UI / Material UI / Ant Design</h5
+                  >
+                  <data value="85">90%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
 
-        </section>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">REST APIs / RTK-QUERY</h5>
+                  <data value="78">85%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 85%"></div>
+                </div>
+              </li>
 
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">GitHub / CI/CD</h5>
+                  <data value="82">82%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 82%"></div>
+                </div>
+              </li>
 
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Unit Testing (Jest, Cypress)</h5>
+                  <data value="75">75%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 75%"></div>
+                </div>
+              </li>
 
-        <section class="skill">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Flutter</h5>
+                  <data value="85">85%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 85%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">React.js</h5>
-                <data value="90">90%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Vue.js / Nuxt.js</h5>
-                <data value="85">85%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">JavaScript / TypeScript</h5>
-                <data value="88">88%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 88%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Redux / Pinia /Context API</h5>
-                <data value="80">90%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Tailwind CSS / Chakra UI / Material UI / Ant Design</h5>
-                <data value="85">90%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">REST APIs / RTK-QUERY</h5>
-                <data value="78">85%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">GitHub / CI/CD</h5>
-                <data value="82">82%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 82%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Unit Testing (Jest, Cypress)</h5>
-                <data value="75">75%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-            </li>
-
-          </ul>
-
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #EXPERTISE
       -->
 
-      <article class="expertise" data-page="expertise">
+        <article class="expertise" data-page="expertise">
+          <header>
+            <h2 class="h2 article-title">Tech Expertise</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Tech Expertise</h2>
-        </header>
-
-        <!-- Mobile Application Development -->
-        <section class="expertise-timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
+          <!-- Mobile Application Development -->
+          <section class="expertise-timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Mobile Application Development</h3>
             </div>
-            <h3 class="h3">Mobile Application Development</h3>
-          </div>
 
-          <div class="expertise-timeline-list">
-            <div class="expertise-timeline-item">
-              <div class="expertise-timeline-content">
-                <h4 class="h4 framework-title">Frameworks & Technologies</h4>
-                <div class="framework-pills">
-                  <span class="framework-pill">Flutter</span>
-                  <span class="framework-pill">React Native</span>
-                  <span class="framework-pill">Dart</span>
-                  <span class="framework-pill">JavaScript</span>
-                  <span class="framework-pill">TypeScript</span>
-                  <span class="framework-pill">Firebase</span>
-                  <span class="framework-pill">REST APIs</span>
-                  <span class="framework-pill">GraphQL</span>
+            <div class="expertise-timeline-list">
+              <div class="expertise-timeline-item">
+                <div class="expertise-timeline-content">
+                  <h4 class="h4 framework-title">Frameworks & Technologies</h4>
+                  <div class="framework-pills">
+                    <span class="framework-pill">Flutter</span>
+                    <span class="framework-pill">React Native</span>
+                    <span class="framework-pill">Dart</span>
+                    <span class="framework-pill">JavaScript</span>
+                    <span class="framework-pill">TypeScript</span>
+                    <span class="framework-pill">Firebase</span>
+                    <span class="framework-pill">REST APIs</span>
+                    <span class="framework-pill">GraphQL</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="expertise-timeline-item">
+                <div class="expertise-timeline-content">
+                  <h4 class="h4 framework-title">State Management</h4>
+                  <div class="framework-pills">
+                    <span class="framework-pill">BLoC Pattern</span>
+                    <span class="framework-pill">Provider</span>
+                    <span class="framework-pill">Redux</span>
+                    <span class="framework-pill">MobX</span>
+                    <span class="framework-pill">GetX</span>
+                    <span class="framework-pill">Context API</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="expertise-timeline-item">
+                <div class="expertise-timeline-content">
+                  <h4 class="h4 framework-title">Development Tools</h4>
+                  <div class="framework-pills">
+                    <span class="framework-pill">Git</span>
+                    <span class="framework-pill">GitHub</span>
+                    <span class="framework-pill">CI/CD</span>
+                    <span class="framework-pill">Jest</span>
+                    <span class="framework-pill">Cypress</span>
+                    <span class="framework-pill">VS Code</span>
+                    <span class="framework-pill">Android Studio</span>
+                    <span class="framework-pill">Xcode</span>
+                  </div>
                 </div>
               </div>
             </div>
+          </section>
 
-            <div class="expertise-timeline-item">
-              <div class="expertise-timeline-content">
-                <h4 class="h4 framework-title">State Management</h4>
-                <div class="framework-pills">
-                  <span class="framework-pill">BLoC Pattern</span>
-                  <span class="framework-pill">Provider</span>
-                  <span class="framework-pill">Redux</span>
-                  <span class="framework-pill">MobX</span>
-                  <span class="framework-pill">GetX</span>
-                  <span class="framework-pill">Context API</span>
+          <!-- Web Development -->
+          <section class="expertise-timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="globe-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Web Development</h3>
+            </div>
+
+            <div class="expertise-timeline-list">
+              <div class="expertise-timeline-item">
+                <div class="expertise-timeline-content">
+                  <h4 class="h4 framework-title">Frontend Frameworks</h4>
+                  <div class="framework-pills">
+                    <span class="framework-pill">React.js</span>
+                    <span class="framework-pill">Vue.js</span>
+                    <span class="framework-pill">Nuxt.js</span>
+                    <span class="framework-pill">Next.js</span>
+                    <span class="framework-pill">Angular</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="expertise-timeline-item">
+                <div class="expertise-timeline-content">
+                  <h4 class="h4 framework-title">Styling & UI Libraries</h4>
+                  <div class="framework-pills">
+                    <span class="framework-pill">Tailwind CSS</span>
+                    <span class="framework-pill">Chakra UI</span>
+                    <span class="framework-pill">Material UI</span>
+                    <span class="framework-pill">Ant Design</span>
+                    <span class="framework-pill">Bootstrap</span>
+                    <span class="framework-pill">CSS3</span>
+                    <span class="framework-pill">SCSS</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="expertise-timeline-item">
+                <div class="expertise-timeline-content">
+                  <h4 class="h4 framework-title">State Management & APIs</h4>
+                  <div class="framework-pills">
+                    <span class="framework-pill">Redux</span>
+                    <span class="framework-pill">Pinia</span>
+                    <span class="framework-pill">Context API</span>
+                    <span class="framework-pill">RTK Query</span>
+                    <span class="framework-pill">Axios</span>
+                    <span class="framework-pill">Fetch API</span>
+                    <span class="framework-pill">GraphQL</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="expertise-timeline-item">
+                <div class="expertise-timeline-content">
+                  <h4 class="h4 framework-title">Development & Testing</h4>
+                  <div class="framework-pills">
+                    <span class="framework-pill">TypeScript</span>
+                    <span class="framework-pill">JavaScript (ES6+)</span>
+                    <span class="framework-pill">Webpack</span>
+                    <span class="framework-pill">Vite</span>
+                    <span class="framework-pill">Jest</span>
+                    <span class="framework-pill">Cypress</span>
+                    <span class="framework-pill">ESLint</span>
+                    <span class="framework-pill">Prettier</span>
+                  </div>
                 </div>
               </div>
             </div>
+          </section>
+        </article>
 
-            <div class="expertise-timeline-item">
-              <div class="expertise-timeline-content">
-                <h4 class="h4 framework-title">Development Tools</h4>
-                <div class="framework-pills">
-                  <span class="framework-pill">Git</span>
-                  <span class="framework-pill">GitHub</span>
-                  <span class="framework-pill">CI/CD</span>
-                  <span class="framework-pill">Jest</span>
-                  <span class="framework-pill">Cypress</span>
-                  <span class="framework-pill">VS Code</span>
-                  <span class="framework-pill">Android Studio</span>
-                  <span class="framework-pill">Xcode</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Web Development -->
-        <section class="expertise-timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="globe-outline"></ion-icon>
-            </div>
-            <h3 class="h3">Web Development</h3>
-          </div>
-
-          <div class="expertise-timeline-list">
-            <div class="expertise-timeline-item">
-              <div class="expertise-timeline-content">
-                <h4 class="h4 framework-title">Frontend Frameworks</h4>
-                <div class="framework-pills">
-                  <span class="framework-pill">React.js</span>
-                  <span class="framework-pill">Vue.js</span>
-                  <span class="framework-pill">Nuxt.js</span>
-                  <span class="framework-pill">Next.js</span>
-                  <span class="framework-pill">Angular</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="expertise-timeline-item">
-              <div class="expertise-timeline-content">
-                <h4 class="h4 framework-title">Styling & UI Libraries</h4>
-                <div class="framework-pills">
-                  <span class="framework-pill">Tailwind CSS</span>
-                  <span class="framework-pill">Chakra UI</span>
-                  <span class="framework-pill">Material UI</span>
-                  <span class="framework-pill">Ant Design</span>
-                  <span class="framework-pill">Bootstrap</span>
-                  <span class="framework-pill">CSS3</span>
-                  <span class="framework-pill">SCSS</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="expertise-timeline-item">
-              <div class="expertise-timeline-content">
-                <h4 class="h4 framework-title">State Management & APIs</h4>
-                <div class="framework-pills">
-                  <span class="framework-pill">Redux</span>
-                  <span class="framework-pill">Pinia</span>
-                  <span class="framework-pill">Context API</span>
-                  <span class="framework-pill">RTK Query</span>
-                  <span class="framework-pill">Axios</span>
-                  <span class="framework-pill">Fetch API</span>
-                  <span class="framework-pill">GraphQL</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="expertise-timeline-item">
-              <div class="expertise-timeline-content">
-                <h4 class="h4 framework-title">Development & Testing</h4>
-                <div class="framework-pills">
-                  <span class="framework-pill">TypeScript</span>
-                  <span class="framework-pill">JavaScript (ES6+)</span>
-                  <span class="framework-pill">Webpack</span>
-                  <span class="framework-pill">Vite</span>
-                  <span class="framework-pill">Jest</span>
-                  <span class="framework-pill">Cypress</span>
-                  <span class="framework-pill">ESLint</span>
-                  <span class="framework-pill">Prettier</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>Web Development</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>Mobile Applications</button>
-            </li>
-          </ul>
-
-          <div class="filter-select-box">
-            <button class="filter-select" data-select>
-              <div class="select-value" data-selecct-value>Select category</div>
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-            </button>
-
-            <ul class="select-list">
-              <li class="select-item">
-                <button data-select-item>All</button>
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
               </li>
-              <li class="select-item">
-                <button data-select-item>Web Development</button>
+              <li class="filter-item">
+                <button data-filter-btn>Web Development</button>
               </li>
-              <li class="select-item">
-                <button data-select-item>Mobile Applications</button>
+              <li class="filter-item">
+                <button data-filter-btn>Mobile Applications</button>
               </li>
             </ul>
-          </div>
 
-          <ul class="project-list">
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value
+                  >Select category</div
+                >
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
 
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="http://mybizly.com" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/bizly.png" alt="Bizly" loading="lazy">
-                </figure>
-                <h3 class="project-title">Bizly</h3>
-                <p class="project-category">Social Media Platform</p>
-              </a>
-            </li>
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Web Development</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Mobile Applications</button>
+                </li>
+              </ul>
+            </div>
 
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="https://hivetax.ai/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/hive.png" alt="Hive" loading="lazy">
-                </figure>
-                <h3 class="project-title">Hive (Tax Consultancy)</h3>
-                <p class="project-category">AI Chatbot for Tax Consultation</p>
-              </a>
-            </li>
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="http://mybizly.com" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/bizly.png"
+                      alt="Bizly"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Bizly</h3>
+                  <p class="project-category">Social Media Platform</p>
+                </a>
+              </li>
 
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="https://homehealthfocus.ai/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/home-health.png" alt="Home Health Focus" loading="lazy">
-                </figure>
-                <h3 class="project-title">Home Health Focus</h3>
-                <p class="project-category">SEO-Friendly Health Web App</p>
-              </a>
-            </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://hivetax.ai/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/hive.png"
+                      alt="Hive"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Hive (Tax Consultancy)</h3>
+                  <p class="project-category"
+                    >AI Chatbot for Tax Consultation</p
+                  >
+                </a>
+              </li>
 
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="https://dev-portal.docurious.com" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/docurious.png" alt="DoCurious" loading="lazy">
-                </figure>
-                <h3 class="project-title">DoCurious</h3>
-                <p class="project-category">Challenge-Based Platform</p>
-              </a>
-            </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://homehealthfocus.ai/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/home-health.png"
+                      alt="Home Health Focus"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Home Health Focus</h3>
+                  <p class="project-category">SEO-Friendly Health Web App</p>
+                </a>
+              </li>
 
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="https://easyd.io/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/easyd.png" alt="EasyD Digital Signage" loading="lazy">
-                </figure>
-                <h3 class="project-title">EasyD Digital Signage</h3>
-                <p class="project-category">Frontend Development</p>
-              </a>
-            </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://dev-portal.docurious.com" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/docurious.png"
+                      alt="DoCurious"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">DoCurious</h3>
+                  <p class="project-category">Challenge-Based Platform</p>
+                </a>
+              </li>
 
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/sms.png" alt="Society Management System" loading="lazy">
-                </figure>
-                <h3 class="project-title">Society Management System</h3>
-                <p class="project-category">Connecting Communities</p>
-              </a>
-            </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://easyd.io/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/easyd.png"
+                      alt="EasyD Digital Signage"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">EasyD Digital Signage</h3>
+                  <p class="project-category">Frontend Development</p>
+                </a>
+              </li>
 
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/agrivision.webp" alt="Agrivision" loading="lazy">
-                </figure>
-                <h3 class="project-title">Agrivision</h3>
-                <p class="project-category">Agriculture Technology Platform</p>
-              </a>
-            </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/sms.png"
+                      alt="Society Management System"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Society Management System</h3>
+                  <p class="project-category">Connecting Communities</p>
+                </a>
+              </li>
 
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="https://www.foodmamba.com/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/food-mamba.png" alt="Food Mamba" loading="lazy">
-                </figure>
-                <h3 class="project-title">Food Mamba</h3>
-                <p class="project-category">Food Delivery App</p>
-              </a>
-            </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/agrivision.webp"
+                      alt="Agrivision"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Agrivision</h3>
+                  <p class="project-category"
+                    >Agriculture Technology Platform</p
+                  >
+                </a>
+              </li>
 
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/nft.png" alt="Dictator NFT Project" loading="lazy">
-                </figure>
-                <h3 class="project-title">Dictator NFT Project</h3>
-                <p class="project-category">Blockchain-Based NFT Platform</p>
-              </a>
-            </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://www.foodmamba.com/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/food-mamba.png"
+                      alt="Food Mamba"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Food Mamba</h3>
+                  <p class="project-category">Food Delivery App</p>
+                </a>
+              </li>
 
-            <!-- Mobile Application Projects -->
-            <li class="project-item active" data-filter-item data-category="mobile applications">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/food-mamba.png" alt="Food Mamba Mobile App" loading="lazy">
-                </figure>
-                <h3 class="project-title">Food Mamba Mobile App</h3>
-                <p class="project-category">Cross-Platform Food Delivery App (Flutter)</p>
-              </a>
-            </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/nft.png"
+                      alt="Dictator NFT Project"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Dictator NFT Project</h3>
+                  <p class="project-category">Blockchain-Based NFT Platform</p>
+                </a>
+              </li>
 
-            <li class="project-item active" data-filter-item data-category="mobile applications">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/sms.png" alt="Society Management Mobile App" loading="lazy">
-                </figure>
-                <h3 class="project-title">Society Management Mobile App</h3>
-                <p class="project-category">Community Management App (React Native)</p>
-              </a>
-            </li>
+              <!-- Mobile Application Projects -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="mobile applications"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/food-mamba.png"
+                      alt="Food Mamba Mobile App"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Food Mamba Mobile App</h3>
+                  <p class="project-category"
+                    >Cross-Platform Food Delivery App (Flutter)</p
+                  >
+                </a>
+              </li>
 
-            <li class="project-item active" data-filter-item data-category="mobile applications">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/agrivision.webp" alt="Agrivision Mobile App" loading="lazy">
-                </figure>
-                <h3 class="project-title">Agrivision Mobile App</h3>
-                <p class="project-category">Agriculture Technology Mobile Platform (Flutter)</p>
-              </a>
-            </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="mobile applications"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/sms.png"
+                      alt="Society Management Mobile App"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Society Management Mobile App</h3>
+                  <p class="project-category"
+                    >Community Management App (React Native)</p
+                  >
+                </a>
+              </li>
 
-            <li class="project-item active" data-filter-item data-category="mobile applications">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/nft.png" alt="NFT Marketplace Mobile App" loading="lazy">
-                </figure>
-                <h3 class="project-title">NFT Marketplace Mobile App</h3>
-                <p class="project-category">Blockchain NFT Trading App (React Native)</p>
-              </a>
-            </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="mobile applications"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/agrivision.webp"
+                      alt="Agrivision Mobile App"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Agrivision Mobile App</h3>
+                  <p class="project-category"
+                    >Agriculture Technology Mobile Platform (Flutter)</p
+                  >
+                </a>
+              </li>
 
-          </ul>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="mobile applications"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/nft.png"
+                      alt="NFT Marketplace Mobile App"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">NFT Marketplace Mobile App</h3>
+                  <p class="project-category"
+                    >Blockchain NFT Trading App (React Native)</p
+                  >
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-        </section>
-
-
-      </article>
-
-
-      <!--
+        <!--
         - #CONTACT
       -->
 
-      <article class="contact" data-page="contact">
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10850.747576569946!2d74.27605345!3d31.433936849999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919031b4a73a4d9%3A0x258688c4c93aaeb!2sNawab%20Town%2C%20Lahore%2C%20Pakistan!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+                width="400"
+                height="300"
+                loading="lazy"
+              ></iframe>
+            </figure>
+          </section>
 
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10850.747576569946!2d74.27605345!3d31.433936849999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919031b4a73a4d9%3A0x258688c4c93aaeb!2sNawab%20Town%2C%20Lahore%2C%20Pakistan!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
+          <section class="contact-form">
+            <h3 class="h3 form-title">Get in Touch</h3>
 
+            <form
+              action="https://formsubmit.co/usmanaziz.designer@gmail.com"
+              method="POST"
+              class="form"
+            >
+              <input type="hidden" name="_captcha" value="false" />
 
-        <section class="contact-form">
-          <h3 class="h3 form-title">Get in Touch</h3>
+              <div class="input-wrapper">
+                <div>
+                  <input
+                    type="text"
+                    id="fullname"
+                    name="fullname"
+                    class="form-input"
+                    placeholder="Full Name"
+                    required
+                  />
+                </div>
 
-          <form action="https://formsubmit.co/usmanaziz.designer@gmail.com" method="POST" class="form">
-
-            <input type="hidden" name="_captcha" value="false">
-
-            <div class="input-wrapper">
-              <div>
-                <input type="text" id="fullname" name="fullname" class="form-input" placeholder="Full Name" required>
+                <div>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-input"
+                    placeholder="Email Address"
+                    required
+                  />
+                </div>
               </div>
 
               <div>
-                <input type="email" id="email" name="email" class="form-input" placeholder="Email Address" required>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-input"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
               </div>
-            </div>
 
-            <div>
-              <textarea id="message" name="message" class="form-input" placeholder="Your Message" required></textarea>
-            </div>
+              <button class="form-btn" type="submit">
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
 
-            <button class="form-btn" type="submit">
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-        </section>
-
-
-
-      </article>
-
-    </div>
-
-  </main>
-
-
-
-
-
-
-  <!--
+    <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 
-  <!--
+    <!--
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
