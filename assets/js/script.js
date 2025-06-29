@@ -175,17 +175,100 @@ const pages = document.querySelectorAll("[data-page]");
 // add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
-
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
+    for (let j = 0; j < pages.length; j++) {
+      if (this.innerHTML.toLowerCase() === pages[j].dataset.page) {
+        pages[j].classList.add("active");
+        navigationLinks[j].classList.add("active");
         window.scrollTo(0, 0);
+
+        // Restore all nav items and hide case study nav when About is clicked
+        if (pages[j].dataset.page === 'about') {
+          document.querySelectorAll('.navbar-item').forEach(item => item.style.display = '');
+          document.getElementById('case-study-nav').style.display = 'none';
+        }
       } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
+        pages[j].classList.remove("active");
+        navigationLinks[j].classList.remove("active");
       }
     }
-
   });
 }
+
+// Helper: Show only the given article using .active class
+function showArticle(page) {
+  document.querySelectorAll('article[data-page]').forEach(article => {
+    if (article.getAttribute('data-page') === page) {
+      article.classList.add('active');
+    } else {
+      article.classList.remove('active');
+    }
+  });
+}
+
+// Helper: Show only the given nav items (by display)
+function showNavItems(visiblePages) {
+  document.querySelectorAll('.navbar-item').forEach(item => {
+    const btn = item.querySelector('.navbar-link');
+    if (!btn) return;
+    const text = btn.textContent.trim().toLowerCase();
+    item.style.display = visiblePages.includes(text) ? '' : 'none';
+  });
+}
+
+// Project click handler
+window.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.project-item').forEach(item => {
+    item.addEventListener('click', function(e) {
+      // Get project details
+      const title = this.getAttribute('data-title') || this.querySelector('.project-title').textContent;
+      const description = this.getAttribute('data-description') || this.querySelector('.project-category').textContent;
+      const image = this.getAttribute('data-image') || this.querySelector('img').src;
+
+      // Populate case study
+      document.getElementById('case-study-title').textContent = title;
+      document.getElementById('case-study-content').innerHTML = `
+        <img src="${image}" alt="${title}" style="max-width:100%;margin-bottom:1em;"/>
+        <p>${description}</p>
+      `;
+
+      // Show only case study article and About/Case Study nav
+      showArticle('case-study');
+      showNavItems(['about', 'case study']);
+      document.getElementById('case-study-nav').style.display = '';
+
+      // Set .active class for nav and article
+      document.querySelectorAll('.navbar-link.active').forEach(btn => btn.classList.remove('active'));
+      document.querySelector('#case-study-nav .navbar-link').classList.add('active');
+      document.querySelectorAll('article[data-page]').forEach(article => article.classList.remove('active'));
+      document.querySelector('article[data-page="case-study"]').classList.add('active');
+    });
+  });
+
+  // Back to Portfolio handler
+  var backBtn = document.getElementById('back-to-portfolio');
+  if (backBtn) {
+    backBtn.onclick = function() {
+      showArticle('portfolio');
+      // Restore all nav items' display
+      document.querySelectorAll('.navbar-item').forEach(item => item.style.display = '');
+      document.getElementById('case-study-nav').style.display = 'none';
+      // Set .active class for nav and article
+      document.querySelectorAll('.navbar-link.active').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('article[data-page]').forEach(article => article.classList.remove('active'));
+      document.querySelector('article[data-page="portfolio"]').classList.add('active');
+      document.querySelectorAll('.navbar-link').forEach(btn => {
+        if (btn.textContent.trim().toLowerCase() === 'portfolio') btn.classList.add('active');
+      });
+    };
+  }
+
+  // Prevent default nav click handler from interfering with Case Study nav
+  var caseStudyNavBtn = document.querySelector('#case-study-nav .navbar-link');
+  if (caseStudyNavBtn) {
+    caseStudyNavBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      // Do nothing or optionally scroll to top
+      window.scrollTo(0, 0);
+    });
+  }
+});
