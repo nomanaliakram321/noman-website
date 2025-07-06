@@ -304,7 +304,7 @@ function generateTechStack(category) {
     };
 
     // Common technologies
-    const commonTech = ["Git", "GitHub", "VS Code", "Figma"];
+    const commonTech = ["GitHub", "VS Code", "Figma"];
 
     // Category-specific technologies
     if (category === "Flutter") {
@@ -322,7 +322,12 @@ function generateTechStack(category) {
             "React Native",
             "JavaScript",
             "TypeScript",
-            "Redux",
+            "ContextApi",
+            "Trae",
+            "Sentry",
+            "Push Notification",
+            "In app update",
+            "Firebase Analytics",
             "Context API",
             "Firebase",
         ];

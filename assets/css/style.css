@@ -220,6 +220,7 @@ body {
     background: var(--border-gradient-onyx);
     padding: 30px;
     border-radius: 14px;
+  
     box-shadow: var(--shadow-2);
     transition: transform var(--transition-1);
 }
@@ -3520,7 +3521,6 @@ textarea.form-input::-webkit-resizer {
 
 .testimonial-text {
     color: var(--light-gray);
-    font-style: italic;
     margin-bottom: 15px;
     line-height: 1.6;
     padding-top: 10px;
