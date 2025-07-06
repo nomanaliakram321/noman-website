@@ -1,124 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Noman Akram</title>
 
-    <!--
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noman Akram</title>
+
+  <!--
     - favicon
   -->
-    <link
-      rel="shortcut icon"
-      href="./assets/images/my-image.png"
-      type="image/x-icon"
-    />
-    <!-- Ionicons CDN -->
-    <!-- Ionicons Library -->
-    <script
-      type="module"
-      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
-    ></script>
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" /> -->
-    <!-- ✅ KEEP THESE -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
+  <link rel="shortcut icon" href="./assets/images/my-image.png" type="image/x-icon" />
+  <!-- Ionicons CDN -->
+  <!-- Ionicons Library -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" /> -->
+  <!-- ✅ KEEP THESE -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-    <!--
+  <!--
     - AOS library link
   -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
-    <!--
+  <!--
     - custom css link
   -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
 
-    <!--
+  <!--
     - google font link
   -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
 
-  <body>
-    <!--
+<body>
+  <!--
     - #MAIN
   -->
-    <div id="preloader">
-      <h1 class="preloader-text"></h1>
-    </div>
+  <div id="preloader">
+    <h1 class="preloader-text"></h1>
+  </div>
 
-    <main id="main-content" class="hidden">
-      <!--
+  <main id="main-content" class="hidden">
+    <!--
       - #SIDEBAR
     -->
 
-      <aside class="sidebar" data-sidebar>
-        <div class="sidebar-info">
-          <figure class="avatar-box"> 
-             <img src="./assets/images/my-image.png" alt="Noman Akram"> 
-             <span class="active-status" title="Available for work!"></span> 
-          </figure>
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/my-image.png" alt="Noman Akram">
+          <span class="active-status" title="Available for work!"></span>
+        </figure>
 
-          <div class="info-content">
-            <h1 class="name" title="Noman Akram">Noman Akram</h1>
+        <div class="info-content">
+          <h1 class="name" title="Noman Akram">Noman Akram</h1>
 
-            <p class="title">Senior Mobile Application Developer</p>
-            <a
-              href="https://drive.google.com/file/d/1-wIYMUgqEkOCVidzsoFy-qV1IvxirYTT/view" target="_blank"
-              download="Noman_Akram_Resume.pdf"
-              class="download-btn"
-            >
-              View Resume
-            </a>
-          </div>
-
-          <button class="info_more-btn" data-sidebar-btn>
-            <span>Show Contacts</span>
-
-            <ion-icon name="chevron-down"></ion-icon>
-          </button>
+          <p class="title">Senior Mobile Application Developer</p>
+          <a href="https://drive.google.com/file/d/1-wIYMUgqEkOCVidzsoFy-qV1IvxirYTT/view" target="_blank"
+            download="Noman_Akram_Resume.pdf" class="download-btn">
+            View Resume
+          </a>
         </div>
 
-        <div class="sidebar-info_more">
-          <div class="separator"></div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
 
-          <ul class="contacts-list">
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="mail-outline"></ion-icon>
-              </div>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
 
-              <div class="contact-info">
-                <p class="contact-title">Email</p>
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
 
-                <a href="mailto:nomanakram1999@gmail.com" class="contact-link"
-                  >nomanakram1999@gmail.com</a
-                >
-              </div>
-            </li>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
 
-            <!-- <li class="contact-item">
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:nomanakram1999@gmail.com" class="contact-link">nomanakram1999@gmail.com</a>
+            </div>
+          </li>
+
+          <!-- <li class="contact-item">
               <div class="icon-box">
                 <ion-icon name="call-outline"></ion-icon>
               </div>
@@ -132,7 +106,7 @@
               </div>
             </li> -->
 
-            <!-- <li class="contact-item">
+          <!-- <li class="contact-item">
               <div class="icon-box">
                 <ion-icon name="calendar-outline"></ion-icon>
               </div>
@@ -144,23 +118,23 @@
               </div>
             </li> -->
 
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="location-outline"></ion-icon>
-              </div>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
 
-              <div class="contact-info">
-                <p class="contact-title">Location</p>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
 
-                <address>Garden Town, Lahore, Pakistan</address>
-              </div>
-            </li>
-          </ul>
+              <address>Garden Town, Lahore, Pakistan</address>
+            </div>
+          </li>
+        </ul>
 
-          <div class="separator"></div>
+        <div class="separator"></div>
 
-          <ul class="social-list">
-            <!-- <li class="social-item">
+        <ul class="social-list">
+          <!-- <li class="social-item">
               <a
                 href="https://www.facebook.com/share/194SqFkYqp/"
                 class="social-link"
@@ -170,27 +144,19 @@
               </a>
             </li> -->
 
-            <li class="social-item">
-              <a
-                href="https://www.linkedin.com/in/noman-akram-51b635125"
-                class="social-link"
-                target="_blank"
-              >
-                <ion-icon name="logo-linkedin"></ion-icon>
-              </a>
-            </li>
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/noman-akram-51b635125" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
 
-            <li class="social-item">
-              <a
-                href="https://github.com/nomanaliakram321/"
-                class="social-link"
-                target="_blank"
-              >
-                <ion-icon name="logo-github"></ion-icon>
-              </a>
-            </li>
+          <li class="social-item">
+            <a href="https://github.com/nomanaliakram321/" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
 
-            <!-- <li class="social-item">
+          <!-- <li class="social-item">
               <a
                 href="https://wa.me/923082692744"
                 class="social-link"
@@ -199,315 +165,344 @@
                 <ion-icon name="logo-whatsapp"></ion-icon>
               </a>
             </li> -->
-          </ul>
-        </div>
-      </aside>
+        </ul>
+      </div>
+    </aside>
 
-      <!--
+    <!--
       - #main-content
     -->
 
-      <div class="main-content">
-        <!--
+    <div class="main-content">
+      <!--
         - #NAVBAR
       -->
 
-        <nav class="navbar">
-          <ul class="navbar-list">
-            <li class="navbar-item">
-              <button class="navbar-link active" data-nav-link>About</button>
-            </li>
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
 
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Resume</button>
-            </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
 
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Expertise</button>
-            </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Expertise</button>
+          </li>
 
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Portfolio</button>
-            </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
 
-            <li class="navbar-item" id="case-study-nav" style="display:none;">
-              <button class="navbar-link" data-nav-link>Case Study</button>
-            </li>
+          <li class="navbar-item" id="case-study-nav" style="display:none;">
+            <button class="navbar-link" data-nav-link>Case Study</button>
+          </li>
 
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Contact</button>
-            </li>
-          </ul>
-        </nav>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+        </ul>
+      </nav>
 
-        <!--
+      <!--
         - #ABOUT
       -->
 
-        <article class="about active" data-page="about">
-          <header>
-            <h2 class="h2 article-title">About me</h2>
-          </header>
+      <article class="about active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
 
-          <section class="about-text">
-            <p>
-              I'm a dedicated Mobile App Developer with 4.5 years of hands-on
-              experience building cross-platform mobile applications using React
-              Native and Flutter. I specialize in crafting clean, efficient, and
-              scalable mobile solutions that deliver real value to users and
-              businesses alike.
-            </p>
-            <p>
-              Throughout my career, I've worked on a variety of mobile
-              projects—from simple utility apps to full-featured,
-              production-level applications. I love turning complex ideas into
-              smooth, user-friendly mobile experiences, and I'm especially
-              passionate about Flutter's design freedom and performance, which I
-              believe is shaping the future of mobile development.
-            </p>
-            <p>
-              Whether you're a startup or an established business, I'm ready
-              to bring your mobile app vision to life with precision, speed, and
-              a deep understanding of modern development practices.
-            </p>
-          </section>
+        <section class="about-text">
+          <p>
+            I'm a dedicated Mobile App Developer with 4.5 years of hands-on
+            experience building cross-platform mobile applications using React
+            Native and Flutter. I specialize in crafting clean, efficient, and
+            scalable mobile solutions that deliver real value to users and
+            businesses alike.
+          </p>
+          <p>
+            Throughout my career, I've worked on a variety of mobile
+            projects—from simple utility apps to full-featured,
+            production-level applications. I love turning complex ideas into
+            smooth, user-friendly mobile experiences, and I'm especially
+            passionate about Flutter's design freedom and performance, which I
+            believe is shaping the future of mobile development.
+          </p>
+          <p>
+            Whether you're a startup or an established business, I'm ready
+            to bring your mobile app vision to life with precision, speed, and
+            a deep understanding of modern development practices.
+          </p>
+        </section>
 
-          <section class="milestones">
-            <h3 class="h3 milestones-title">🚀 Milestones & Achievements</h3>
-            
-            <div class="milestone-list">
-              <div class="milestone-item">
-                <div class="milestone-number">4.5+</div>
-                <div class="milestone-text">YEARS OF EXPERIENCE</div>
-              </div>
+        <section class="milestones">
+          <h3 class="h3 milestones-title">🚀 Milestones & Achievements</h3>
 
-              <div class="milestone-item">
-                <div class="milestone-number">+50</div>
-                <div class="milestone-text">PROJECTS COMPLETED</div>
-              </div>
-
-              <div class="milestone-item">
-                <div class="milestone-number">+20</div>
-                <div class="milestone-text">WORLDWIDE CLIENTS</div>
-              </div>
-              
-            
+          <div class="milestone-list">
+            <div class="milestone-item">
+              <div class="milestone-number">4.5+</div>
+              <div class="milestone-text">YEARS OF EXPERIENCE</div>
             </div>
-          </section>
 
-          <section class="strategy">
-            <h3 class="h3 strategy-title">Strategic Implementation Pathway</h3>
-            
-            <div class="strategy-list">
-              <div class="strategy-item">
-                <div class="strategy-icon-box">
-                  <ion-icon name="search-outline"></ion-icon>
-                </div>
-                <h4 class="h4 strategy-item-title">Planning & Strategy</h4>
-                <p class="strategy-item-text">
-                  I analyze your goals, target users, and key features to create a roadmap for your app's success.
-                </p>
-              </div>
-
-              <div class="strategy-item">
-                <div class="strategy-icon-box">
-                  <ion-icon name="color-palette-outline"></ion-icon>
-                </div>
-                <h4 class="h4 strategy-item-title">Pixel-Perfect UI/UX Design</h4>
-                <p class="strategy-item-text">
-                  I create intuitive, visually appealing, and user-friendly interfaces that enhance engagement and usability.
-                </p>
-              </div>
-
-              <div class="strategy-item">
-                <div class="strategy-icon-box">
-                  <ion-icon name="code-slash-outline"></ion-icon>
-                </div>
-                <h4 class="h4 strategy-item-title">Efficient Development & Seamless Integration</h4>
-                <p class="strategy-item-text">
-                  I build high-performance, scalable applications with clean, maintainable code. I integrate essential features like API connections, third-party services, and IAP to enhance functionality.
-                </p>
-              </div>
-
-              <div class="strategy-item">
-                <div class="strategy-icon-box">
-                  <ion-icon name="rocket-outline"></ion-icon>
-                </div>
-                <h4 class="h4 strategy-item-title">Launch & Post-Launch Support</h4>
-                <p class="strategy-item-text">
-                  I ensure a hassle-free deployment and provide ongoing updates, optimizations, and support to keep your app running flawlessly.
-                </p>
-              </div>
+            <div class="milestone-item">
+              <div class="milestone-number">+50</div>
+              <div class="milestone-text">PROJECTS COMPLETED</div>
             </div>
-          </section>
 
-          <!--
+            <div class="milestone-item">
+              <div class="milestone-number">+20</div>
+              <div class="milestone-text">WORLDWIDE CLIENTS</div>
+            </div>
+
+
+          </div>
+        </section>
+
+        <section class="strategy">
+          <h3 class="h3 strategy-title">Strategic Implementation Pathway</h3>
+
+          <div class="strategy-list">
+            <div class="strategy-item">
+              <div class="strategy-icon-box">
+                <ion-icon name="search-outline"></ion-icon>
+              </div>
+              <h4 class="h4 strategy-item-title">Planning & Strategy</h4>
+              <p class="strategy-item-text">
+                I analyze your goals, target users, and key features to create a roadmap for your app's success.
+              </p>
+            </div>
+
+            <div class="strategy-item">
+              <div class="strategy-icon-box">
+                <ion-icon name="color-palette-outline"></ion-icon>
+              </div>
+              <h4 class="h4 strategy-item-title">Pixel-Perfect UI/UX Design</h4>
+              <p class="strategy-item-text">
+                I create intuitive, visually appealing, and user-friendly interfaces that enhance engagement and
+                usability.
+              </p>
+            </div>
+
+            <div class="strategy-item">
+              <div class="strategy-icon-box">
+                <ion-icon name="code-slash-outline"></ion-icon>
+              </div>
+              <h4 class="h4 strategy-item-title">Efficient Development & Seamless Integration</h4>
+              <p class="strategy-item-text">
+                I build high-performance, scalable applications with clean, maintainable code. I integrate essential
+                features like API connections, third-party services, and IAP to enhance functionality.
+              </p>
+            </div>
+
+            <div class="strategy-item">
+              <div class="strategy-icon-box">
+                <ion-icon name="rocket-outline"></ion-icon>
+              </div>
+              <h4 class="h4 strategy-item-title">Launch & Post-Launch Support</h4>
+              <p class="strategy-item-text">
+                I ensure a hassle-free deployment and provide ongoing updates, optimizations, and support to keep your
+                app running flawlessly.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!--
           - service
         -->
 
-          <!-- Portfolio Showcase Section -->
-          <section class="portfolio-showcase">
-            <h3 class="h3 testimonials-title">Here's Some Of My Work</h3>
-            <p class="portfolio-showcase-subtitle">Don’t just take my word for it — dive into what I’ve built and see the magic yourself 🚀✨</p>
-            
-            <div class="portfolio-grid has-scrollbar">
-              <!-- GIFT Utilities -->
-              <div class="portfolio-card">
-                <div class="portfolio-header">
-                  <div class="portfolio-logo">
-                    <img src="./assets/images/chughtai.png" alt="GIFT Utilities" width="60" height="60">
-                  </div>
-                  <h4 class="h4 portfolio-title">ChughtaiLab</h4>
+        <!-- Portfolio Showcase Section -->
+        <section class="portfolio-showcase">
+          <h3 class="h3 testimonials-title">Here's Some Of My Work</h3>
+          <p class="portfolio-showcase-subtitle">Don’t just take my word for it — dive into what I’ve built and see the
+            magic yourself 🚀✨</p>
+
+          <div class="portfolio-grid has-scrollbar">
+            <!-- GIFT Utilities -->
+            <div class="portfolio-card">
+              <div class="portfolio-header">
+                <div class="portfolio-logo">
+                  <img src="./assets/images/chughtai.png" alt="GIFT Utilities" width="60" height="60">
                 </div>
-                <p class="portfolio-description">CLL App lets you access your Chughtai Lab reports, manage your profile, and find nearby locations—all in one place.</p>
-                <div class="portfolio-platforms">
-                  <a href="https://apps.apple.com/pk/app/chughtailab/id931352435" target="_blank">
-                    <span class="platform-icon"><ion-icon name="logo-apple"></ion-icon></span>
-                  </a>
-                  <a href="https://play.google.com/store/apps/details?id=project.bitlogix.nexuspro&pcampaignid=web_share" target="_blank">
-                  <span class="platform-icon"><ion-icon  name="logo-google-playstore" ></ion-icon></span>
-                </a>
-                  <!-- <a href="https://play.google.com/store/apps/details?id=project.bitlogix.nexuspro&pcampaignid=web_share" target="_blank"></a> -->
-                  <!-- <span class="platform-icon"><ion-icon name="globe-outline"></ion-icon></span> -->
-                </div>
-                <div class="portfolio-screenshot">
-                  <img src="./assets/images/chughat_porf.png" alt="GIFT Utilities Screenshot" class="portfolio-image">
-                </div>
+                <h4 class="h4 portfolio-title">ChughtaiLab</h4>
               </div>
-              
-              <!-- Enbiosis -->
-              <div class="portfolio-card">
-                <div class="portfolio-header">
-                  <div class="portfolio-logo">
-                    <img src="./assets/images/twocent_logo.png" alt="Enbiosis" width="60" height="60">
-                  </div>
-                  <h4 class="h4 portfolio-title">Twocents</h4>
-                </div>
-                <p class="portfolio-description">twocents is your space to share and discover top favorites across movies, music, books, and more.</p>
-                <div class="portfolio-platforms">
+              <p class="portfolio-description">CLL App lets you access your Chughtai Lab reports, manage your profile,
+                and find nearby locations—all in one place.</p>
+              <div class="portfolio-platforms">
+                <a href="https://apps.apple.com/pk/app/chughtailab/id931352435" target="_blank">
+                  <span class="platform-icon"><ion-icon name="logo-apple"></ion-icon></span>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=project.bitlogix.nexuspro&pcampaignid=web_share"
+                  target="_blank">
                   <span class="platform-icon"><ion-icon name="logo-google-playstore"></ion-icon></span>
-                  <a href="https://apps.apple.com/in/app/twocents-find-stuff-you-like/id6446204846" target="_blank">
-                  <span class="platform-icon"><ion-icon name="logo-apple"></ion-icon></span>
                 </a>
-                  <span class="platform-icon"><ion-icon name="globe-outline"></ion-icon></span>
-                </div>
-                <div class="portfolio-screenshot">
-                  <img src="./assets/images/twocent_porf.png" alt="Enbiosis Screenshot" class="portfolio-image">
-                </div>
+                <!-- <a href="https://play.google.com/store/apps/details?id=project.bitlogix.nexuspro&pcampaignid=web_share" target="_blank"></a> -->
+                <!-- <span class="platform-icon"><ion-icon name="globe-outline"></ion-icon></span> -->
               </div>
-              <div class="portfolio-card">
-                <div class="portfolio-header">
-                  <div class="portfolio-logo">
-                    <img src="./assets/images/nuriq_logo.png" alt="Enbiosis" width="60" height="60">
-                  </div>
-                  <h4 class="h4 portfolio-title">NuriQ</h4>
-                </div>
-                <p class="portfolio-description">twocents is your space to share and discover top favorites across movies, music, books, and more.</p>
-                <div class="portfolio-platforms">
-                  <span class="platform-icon"><ion-icon name="logo-google-playstore"></ion-icon></span>
-                  <a href="https://apps.apple.com/in/app/twocents-find-stuff-you-like/id6446204846" target="_blank">
-                  <span class="platform-icon"><ion-icon name="logo-apple"></ion-icon></span>
-                </a>
-                  <span class="platform-icon"><ion-icon name="globe-outline"></ion-icon></span>
-                </div>
-                <div class="portfolio-screenshot">
-                  <img src="./assets/images/nurriq_prof.png" alt="Enbiosis Screenshot" class="portfolio-image">
-                </div>
-              </div>
-              
-              <!-- Virtual Ref -->
-              <div class="portfolio-card">
-                <div class="portfolio-header">
-                  <div class="portfolio-logo">
-                    <img src="./assets/images/well_logo.png" alt="Virtual Ref" width="60" height="60">
-                  </div>
-                  <h4 class="h4 portfolio-title">WellmeAI</h4>
-                </div>
-                <p class="portfolio-description">WellMe is your AI wellness companion for journaling, emotional support, and daily mental health guidance.</p>
-                <div class="portfolio-platforms">
-                  <span class="platform-icon"><ion-icon name="logo-apple"></ion-icon></span>
-                 <a href="https://play.google.com/store/apps/details?id=com.bumpsocial&pcampaignid=web_share" target="_blank"> <span class="platform-icon"><ion-icon name="logo-google-playstore"></ion-icon></span></a>
-                </div>
-                <div class="portfolio-screenshot">
-                  <img src="./assets/images/wellmme_porf.png" alt="Virtual Ref Screenshot" class="portfolio-image">
-                </div>
-              </div>
-              
-              <!-- Additional Portfolio Card 1 -->
-              <div class="portfolio-card">
-                <div class="portfolio-header">
-                  <div class="portfolio-logo">
-                    <img src="./assets/images/bump_logo.png" alt="Health App" width="60" height="60">
-                  </div>
-                  <h4 class="h4 portfolio-title">Bump Connect</h4>
-                </div>
-                <p class="portfolio-description">Bump Connect is your all-in-one platform to create, share, and monetize contents</p>
-                <div class="portfolio-platforms">
-              <a href="https://apps.apple.com/pk/app/bump-connect-social-community/id6475402930" target="_blank">   <span class="platform-icon"><ion-icon name="logo-apple"></ion-icon></span></a> 
-                 <a href="https://play.google.com/store/apps/details?id=com.bumpsocial&pcampaignid=web_share" target="_blank"> <span class="platform-icon"><ion-icon name="logo-google-playstore"></ion-icon></span></a>
-                </div>
-                <div class="portfolio-screenshot">
-                  <img src="./assets/images/bump_porf.png" alt="Health App Screenshot" class="portfolio-image">
-                </div>
-              </div>
-              
-              <!-- Additional Portfolio Card 2 -->
-              <div class="portfolio-card">
-                <div class="portfolio-header">
-                  <div class="portfolio-logo">
-                    <img src="./assets/images/awraaq.png" alt="Finance Tracker" width="60" height="60">
-                  </div>
-                  <h4 class="h4 portfolio-title">AWRAAQ BlockTrade</h4>
-                </div>
-                <p class="portfolio-description">AWRAAQ Digital streamlines secure block trade offers, RFQs, and deal monitoring between brokers and clients.</p>
-                <div class="portfolio-platforms">
-               <a href="https://apps.apple.com/pk/app/awraaq-blocktrade/id1593450996" target="_blank">   <span class="platform-icon"><ion-icon name="logo-apple"></ion-icon></span></a>
-               <a href="https://play.google.com/store/apps/details?id=com.awraaq.digital&pcampaignid=web_share" target="_blank">      <span class="platform-icon"><ion-icon name="logo-google-playstore"></ion-icon></span></a>
-                </div>
-                <div class="portfolio-screenshot">
-                  <img src="./assets/images/awraaq_porf.png" alt="Finance Tracker Screenshot" class="portfolio-image">
-                </div>
+              <div class="portfolio-screenshot">
+                <img src="./assets/images/chughat_porf.png" alt="GIFT Utilities Screenshot" class="portfolio-image">
               </div>
             </div>
-          </section>
+
+            <!-- Enbiosis -->
+            <div class="portfolio-card">
+              <div class="portfolio-header">
+                <div class="portfolio-logo">
+                  <img src="./assets/images/twocent_logo.png" alt="Enbiosis" width="60" height="60">
+                </div>
+                <h4 class="h4 portfolio-title">Twocents</h4>
+              </div>
+              <p class="portfolio-description">twocents is your space to share and discover top favorites across movies,
+                music, books, and more.</p>
+              <div class="portfolio-platforms">
+                <span class="platform-icon"><ion-icon name="logo-google-playstore"></ion-icon></span>
+                <a href="https://apps.apple.com/in/app/twocents-find-stuff-you-like/id6446204846" target="_blank">
+                  <span class="platform-icon"><ion-icon name="logo-apple"></ion-icon></span>
+                </a>
+                <span class="platform-icon"><ion-icon name="globe-outline"></ion-icon></span>
+              </div>
+              <div class="portfolio-screenshot">
+                <img src="./assets/images/twocent_porf.png" alt="Enbiosis Screenshot" class="portfolio-image">
+              </div>
+            </div>
+            <div class="portfolio-card">
+              <div class="portfolio-header">
+                <div class="portfolio-logo">
+                  <img src="./assets/images/nuriq_logo.png" alt="Enbiosis" width="60" height="60">
+                </div>
+                <h4 class="h4 portfolio-title">NuriQ</h4>
+              </div>
+              <p class="portfolio-description">twocents is your space to share and discover top favorites across movies,
+                music, books, and more.</p>
+              <div class="portfolio-platforms">
+                <span class="platform-icon"><ion-icon name="logo-google-playstore"></ion-icon></span>
+                <a href="https://apps.apple.com/in/app/twocents-find-stuff-you-like/id6446204846" target="_blank">
+                  <span class="platform-icon"><ion-icon name="logo-apple"></ion-icon></span>
+                </a>
+                <span class="platform-icon"><ion-icon name="globe-outline"></ion-icon></span>
+              </div>
+              <div class="portfolio-screenshot">
+                <img src="./assets/images/nurriq_prof.png" alt="Enbiosis Screenshot" class="portfolio-image">
+              </div>
+            </div>
+
+            <!-- Virtual Ref -->
+            <div class="portfolio-card">
+              <div class="portfolio-header">
+                <div class="portfolio-logo">
+                  <img src="./assets/images/well_logo.png" alt="Virtual Ref" width="60" height="60">
+                </div>
+                <h4 class="h4 portfolio-title">WellmeAI</h4>
+              </div>
+              <p class="portfolio-description">WellMe is your AI wellness companion for journaling, emotional support,
+                and daily mental health guidance.</p>
+              <div class="portfolio-platforms">
+                <span class="platform-icon"><ion-icon name="logo-apple"></ion-icon></span>
+                <a href="https://play.google.com/store/apps/details?id=com.bumpsocial&pcampaignid=web_share"
+                  target="_blank"> <span class="platform-icon"><ion-icon
+                      name="logo-google-playstore"></ion-icon></span></a>
+              </div>
+              <div class="portfolio-screenshot">
+                <img src="./assets/images/wellmme_porf.png" alt="Virtual Ref Screenshot" class="portfolio-image">
+              </div>
+            </div>
+
+            <!-- Additional Portfolio Card 1 -->
+            <div class="portfolio-card">
+              <div class="portfolio-header">
+                <div class="portfolio-logo">
+                  <img src="./assets/images/bump_logo.png" alt="Health App" width="60" height="60">
+                </div>
+                <h4 class="h4 portfolio-title">Bump Connect</h4>
+              </div>
+              <p class="portfolio-description">Bump Connect is your all-in-one platform to create, share, and monetize
+                contents</p>
+              <div class="portfolio-platforms">
+                <a href="https://apps.apple.com/pk/app/bump-connect-social-community/id6475402930" target="_blank">
+                  <span class="platform-icon"><ion-icon name="logo-apple"></ion-icon></span></a>
+                <a href="https://play.google.com/store/apps/details?id=com.bumpsocial&pcampaignid=web_share"
+                  target="_blank"> <span class="platform-icon"><ion-icon
+                      name="logo-google-playstore"></ion-icon></span></a>
+              </div>
+              <div class="portfolio-screenshot">
+                <img src="./assets/images/bump_porf.png" alt="Health App Screenshot" class="portfolio-image">
+              </div>
+            </div>
+
+            <!-- Additional Portfolio Card 2 -->
+            <div class="portfolio-card">
+              <div class="portfolio-header">
+                <div class="portfolio-logo">
+                  <img src="./assets/images/awraaq.png" alt="Finance Tracker" width="60" height="60">
+                </div>
+                <h4 class="h4 portfolio-title">AWRAAQ BlockTrade</h4>
+              </div>
+              <p class="portfolio-description">AWRAAQ Digital streamlines secure block trade offers, RFQs, and deal
+                monitoring between brokers and clients.</p>
+              <div class="portfolio-platforms">
+                <a href="https://apps.apple.com/pk/app/awraaq-blocktrade/id1593450996" target="_blank"> <span
+                    class="platform-icon"><ion-icon name="logo-apple"></ion-icon></span></a>
+                <a href="https://play.google.com/store/apps/details?id=com.awraaq.digital&pcampaignid=web_share"
+                  target="_blank"> <span class="platform-icon"><ion-icon
+                      name="logo-google-playstore"></ion-icon></span></a>
+              </div>
+              <div class="portfolio-screenshot">
+                <img src="./assets/images/awraaq_porf.png" alt="Finance Tracker Screenshot" class="portfolio-image">
+              </div>
+            </div>
+          </div>
+        </section>
 
 
-          <!--
+        <!--
           - testimonials
         -->
 
-          <section class="testimonials">
-            <h3 class="h3 testimonials-title">What Clients Say About My Work</h3>
+        <section class="testimonials">
+          <h3 class="h3 testimonials-title">What Clients Say About My Work</h3>
 
-            <div class="testimonials-list">
-              <div class="testimonial-item">
-                <div class="client-info">
-                  <img src="./assets/images/company.png" alt="Cogent Labs" class="client-logo" width="60" height="60">
-                  <h4 class="h4 client-name">Cogentlabs Pvt. Ltd</h4>
-                </div>
-                <div class="testimonial-text">
-                  <p>
-Noman is an active and dedicated Mobile App Developer at Cogent Labs Pvt. Ltd., specializing in Flutter and React Native. He consistently demonstrates the ability to work under pressure, plan efficiently, and meet tight deadlines. With strong expertise in cross-platform development, he delivers high-quality mobile applications that are both scalable and user-friendly. Noman actively participates in project planning, feature implementation, and code reviews, contributing to the overall success of the development team. His passion for clean architecture, performance optimization, and continuous learning makes him a valuable asset to the organization. </p>
-                </div>
+          <div class="testimonials-list">
+            <div class="testimonial-item">
+              <div class="client-info">
+                <img src="./assets/images/company.png" alt="Cogent Labs" class="client-logo" width="60" height="60">
+                <h4 class="h4 client-name">Cogentlabs Pvt. Ltd</h4>
+              </div>
+              <div class="testimonial-text">
+                <p>
+                  Noman is an active and dedicated Mobile App Developer at Cogent Labs Pvt. Ltd., specializing in
+                  Flutter and React Native. He consistently demonstrates the ability to work under pressure, plan
+                  efficiently, and meet tight deadlines. With strong expertise in cross-platform development, he
+                  delivers high-quality mobile applications that are both scalable and user-friendly. Noman actively
+                  participates in project planning, feature implementation, and code reviews, contributing to the
+                  overall success of the development team. His passion for clean architecture, performance optimization,
+                  and continuous learning makes him a valuable asset to the organization. </p>
               </div>
             </div>
-              <div class="testimonials-list">
-              <div class="testimonial-item">
-                <div class="client-info">
-                  <img src="./assets/images/cherrybyte.png" alt="Cherrybyte Technologies" class="client-logo" width="60" height="60">
-                  <h4 class="h4 client-name">CherryByte Pvt. Ltd.</h4>
-                </div>
-                <div class="testimonial-text">
-                  <p>
-Noman Akram has been a valuable part of Cherrybyte Technologies as a Mobile App Developer. His expertise in Flutter and React Native, along with his commitment to quality and deadlines, has made a strong impact on our projects. He’s a reliable team player with excellent problem-solving skills and a solid understanding of mobile development best practice.                  </p>
-                </div>
+          </div>
+          <div class="testimonials-list">
+            <div class="testimonial-item">
+              <div class="client-info">
+                <img src="./assets/images/cherrybyte.png" alt="Cherrybyte Technologies" class="client-logo" width="60"
+                  height="60">
+                <h4 class="h4 client-name">CherryByte Pvt. Ltd.</h4>
+              </div>
+              <div class="testimonial-text">
+                <p>
+                  Noman Akram has been a valuable part of Cherrybyte Technologies as a Mobile App Developer. His
+                  expertise in Flutter and React Native, along with his commitment to quality and deadlines, has made a
+                  strong impact on our projects. He’s a reliable team player with excellent problem-solving skills and a
+                  solid understanding of mobile development best practice. </p>
               </div>
             </div>
-          </section>
+          </div>
+        </section>
 
-        
 
-          <!-- <ul class="testimonials-list has-scrollbar">
+
+        <!-- <ul class="testimonials-list has-scrollbar">
 
             <li class="testimonials-item">
               <div class="content-card" data-testimonials-item>
@@ -566,377 +561,410 @@ Noman Akram has been a valuable part of Cherrybyte Technologies as a Mobile App 
            
           </ul> -->
 
-        </section> 
-        
+        </section>
 
-          <!--
+
+        <!--
           - testimonials modal
         -->
 
-          <div class="modal-container" data-modal-container>
-            <div class="overlay" data-overlay></div>
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
 
-            <section class="testimonials-modal">
-              <button class="modal-close-btn" data-modal-close-btn>
-                <ion-icon name="close-outline"></ion-icon>
-              </button>
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
 
-              <div class="modal-img-wrapper">
-                <figure class="modal-avatar-box">
-                  <img
-                    src="assets/images/mehran.png"
-                    alt="Mehran Khan"
-                    width="80"
-                    data-modal-img
-                  />
-                </figure>
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="assets/images/mehran.png" alt="Mehran Khan" width="80" data-modal-img />
+              </figure>
 
-                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+            </div>
+
+            <div class="modal-content">
+              <h4 class="h3 modal-title" data-modal-title>Mehran Khan</h4>
+
+              <time datetime="2022-10-15">15 October, 2022</time>
+
+              <div data-modal-text>
+                <p>
+                  Noman is a brillian, Highly Skilled Person.
+                </p>
               </div>
+            </div>
+          </section>
+        </div>
+      </article>
 
-              <div class="modal-content">
-                <h4 class="h3 modal-title" data-modal-title>Mehran Khan</h4>
-
-                <time datetime="2022-10-15">15 October, 2022</time>
-
-                <div data-modal-text>
-                  <p>
-                 Noman is a brillian, Highly Skilled Person.
-                  </p>
-                </div>
-              </div>
-            </section>
-          </div>
-        </article>
-
-        <!--
+      <!--
         - #RESUME
       -->
 
-        <article class="resume" data-page="resume">
-          <header>
-            <h2 class="h2 article-title">Resume</h2>
-          </header>
-          <section class="timeline">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
-              </div>
-
-              <h3 class="h3">Experience</h3>
+      <article class="resume" data-page="resume">
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
             </div>
 
-            <ol class="timeline-list">
-              <li class="timeline-item">
-                <h4 class="h4">Senior Mobile Application Developer</h4>
-                 <h4 class="h4 timeline-item-title">Cogent Labs Pvt. Ltd</h4>
-                <span>May 2024 — Present</span>
-                <p class="timeline-text">
-                  Leading the development of end-to-end mobile features in React Native
-and Flutter with smooth UI, robust APIs, and high performance.
-                </p>
-              </li>
+            <h3 class="h3">Experience</h3>
+          </div>
 
-              <li class="timeline-item">
-                <h4 class="h4">React Native & Flutter Developer</h4>
-                <h4 class="h4 timeline-item-title">TEKHQS Pvt. Ltd</h4>
-                <span>Jan 2023 — April 2024</span>
-                <p class="timeline-text">
-                  Leading cross-platform app development at TekHQs using React Native
-and Flutter for high-performance, polished mobile experiences.
-                </p>
-              </li>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4">Senior Mobile Application Developer</h4>
+              <h4 class="h4 timeline-item-title">Cogent Labs Pvt. Ltd</h4>
+              <span>May 2024 — Present</span>
+              <p class="timeline-text">
+                Leading the development of end-to-end mobile features in React Native
+                and Flutter with smooth UI, robust APIs, and high performance.
+              </p>
+            </li>
 
-              <li class="timeline-item">
-         <h4 class="h4">React Native & Flutter Developer</h4>
-                <h4 class="h4 timeline-item-title">Cherrybyte Technologies Pvt. Ltd </h4>
-                <span>April 2021 - Dec 2023</span>
-                <p class="timeline-text">
-                  Worked as a Frontend Software Engineer at Cherrybye Technologies,
-                  developing reusable and efficient React components. Integrated
-                  state management using Redux and Context API. Built responsive
-                  UIs, implemented client-side routing, and used Ant Design for
-                  a modern, customizable UI. Set up CI/CD pipelines and ensured
-                  code quality through reviews.
-                </p>
-              </li>
+            <li class="timeline-item">
+              <h4 class="h4">React Native & Flutter Developer</h4>
+              <h4 class="h4 timeline-item-title">TEKHQS Pvt. Ltd</h4>
+              <span>Jan 2023 — April 2024</span>
+              <p class="timeline-text">
+                Leading cross-platform app development at TekHQs using React Native
+                and Flutter for high-performance, polished mobile experiences.
+              </p>
+            </li>
 
-              <li class="timeline-item">
-                <h4 class="h4">Mobile Application Developer</h4>
-                <h4 class="h4 timeline-item-title">Tkxel Pvt. Ltd</h4>
-                <span>July 2022 — Sep 2023</span>
-                <p class="timeline-text">
-                  Worked at Tkxel, contributing to real-world projects and enhancing mobile
-development skills in React Native.
-                </p>
-              </li>
+            <li class="timeline-item">
+              <h4 class="h4">React Native & Flutter Developer</h4>
+              <h4 class="h4 timeline-item-title">Cherrybyte Technologies Pvt. Ltd </h4>
+              <span>April 2021 - Dec 2023</span>
+              <p class="timeline-text">
+                Worked as a Frontend Software Engineer at Cherrybye Technologies,
+                developing reusable and efficient React components. Integrated
+                state management using Redux and Context API. Built responsive
+                UIs, implemented client-side routing, and used Ant Design for
+                a modern, customizable UI. Set up CI/CD pipelines and ensured
+                code quality through reviews.
+              </p>
+            </li>
 
-  
-            </ol>
-          </section>
-          <section class="timeline">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
-              </div>
+            <li class="timeline-item">
+              <h4 class="h4">Mobile Application Developer</h4>
+              <h4 class="h4 timeline-item-title">Tkxel Pvt. Ltd</h4>
+              <span>July 2022 — Sep 2023</span>
+              <p class="timeline-text">
+                Worked at Tkxel, contributing to real-world projects and enhancing mobile
+                development skills in React Native.
+              </p>
+            </li>
 
-              <h3 class="h3">Education</h3>
+
+          </ol>
+        </section>
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
             </div>
 
-            <ol class="timeline-list">
-              <li class="timeline-item">
-<h4 class="h4">Bachelor in Software Engineering</h4>
-      
+            <h3 class="h3">Education</h3>
+          </div>
 
-     <h4 class="h4 timeline-item-title">University of Sargodha, Pakistan</h4>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4">Bachelor in Software Engineering</h4>
 
-                <span>2017 — 2021</span>
 
-                <p class="timeline-text">
-                  I hold a Bachelor's degree in Software Engineering from the University of Sargodha, where I developed strong expertise in programming, web development, and software design principles.
-                </p>
-              </li>
+              <h4 class="h4 timeline-item-title">University of Sargodha, Pakistan</h4>
 
-              <li class="timeline-item">
-                <h4 class="h4">F.Sc Pre-Engineering</h4>
-             
-                <h4 class="h4 timeline-item-title"> Punjab College, Sargodha</h4
-                >
-                <span>2015 — 2017</span>
-                <p class="timeline-text">
-                  I completed my F.Sc Pre-Engineering at Punjab College, Sargodha, where I developed a strong academic foundation in mathematics, physics, and chemistry, which laid the groundwork for my career in software engineering.
-                </p>
-              </li>
+              <span>2017 — 2021</span>
 
-            </ol>
-          </section>
+              <p class="timeline-text">
+                I hold a Bachelor's degree in Software Engineering from the University of Sargodha, where I developed
+                strong expertise in programming, web development, and software design principles.
+              </p>
+            </li>
 
-          <section class="skill">
-            <h3 class="h3 skills-title">My skills</h3>
+            <li class="timeline-item">
+              <h4 class="h4">F.Sc Pre-Engineering</h4>
 
-            <ul class="skills-list content-card">
-  
-               <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">React Native</h5>
-                  <data value="95">99%</data>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 95%"></div>
-                </div>
-              </li>
-                      <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Flutter</h5>
-                  <data value="90">94%</data>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 90%"></div>
-                </div>
-              </li>
-                            <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Expo</h5>
-                  <data value="90">90%</data>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 90%"></div>
-                </div>
-              </li>
- <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">React.js</h5>
-                  <data value="93">80%</data>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 93%"></div>
-                </div>
-              </li>
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">JavaScript / TypeScript</h5>
-                  <data value="88">88%</data>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 88%"></div>
-                </div>
-              </li>
+              <h4 class="h4 timeline-item-title"> Punjab College, Sargodha</h4>
+              <span>2015 — 2017</span>
+              <p class="timeline-text">
+                I completed my F.Sc Pre-Engineering at Punjab College, Sargodha, where I developed a strong academic
+                foundation in mathematics, physics, and chemistry, which laid the groundwork for my career in software
+                engineering.
+              </p>
+            </li>
 
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Redux / Zustand /Context API</h5>
-                  <data value="80">90%</data>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 90%"></div>
-                </div>
-              </li>
+          </ol>
+        </section>
 
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5"
-                    >Bloc/ Provider / GetX </h5
-                  >
-                  <data value="85">90%</data>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 90%"></div>
-                </div>
-              </li>
+        <section class="skill">
+          <h3 class="h3 skills-title">My skills</h3>
 
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">REST APIs / RTK-QUERY</h5>
-                  <data value="78">85%</data>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 85%"></div>
-                </div>
-              </li>
+          <ul class="skills-list content-card">
 
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">GitHub / CI/CD</h5>
-                  <data value="82">82%</data>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 82%"></div>
-                </div>
-              </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">React Native</h5>
+                <data value="95">99%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Flutter</h5>
+                <data value="90">94%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Expo</h5>
+                <data value="90">90%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">React.js</h5>
+                <data value="93">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 93%"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">JavaScript / TypeScript</h5>
+                <data value="88">88%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 88%"></div>
+              </div>
+            </li>
 
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Unit Testing (Jest, Cypress)</h5>
-                  <data value="75">75%</data>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 75%"></div>
-                </div>
-              </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Redux / Zustand /Context API</h5>
+                <data value="80">90%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%"></div>
+              </div>
+            </li>
 
-             
-            </ul>
-          </section>
-        </article>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Bloc/ Provider / GetX </h5>
+                <data value="85">90%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%"></div>
+              </div>
+            </li>
 
-        <!--
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">REST APIs / RTK-QUERY</h5>
+                <data value="78">85%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">GitHub / CI/CD</h5>
+                <data value="82">82%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 82%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Unit Testing (Jest, Cypress)</h5>
+                <data value="75">75%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%"></div>
+              </div>
+            </li>
+
+
+          </ul>
+        </section>
+      </article>
+
+      <!--
         - #EXPERTISE
       -->
 
-        <article class="expertise" data-page="expertise">
-          <header>
-            <h2 class="h2 article-title">Tech Expertise</h2>
-          </header>
+      <article class="expertise" data-page="expertise">
+        <header>
+          <h2 class="h2 article-title">Tech Expertise</h2>
+        </header>
 
-          <!-- Mobile Application Development -->
-          <section class="expertise-timeline">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="phone-portrait-outline"></ion-icon>
+        <!-- Mobile Application Development -->
+        <section class="expertise-timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Mobile Application Development</h3>
+          </div>
+
+          <div class="expertise-timeline-list">
+            <div class="expertise-timeline-item">
+              <div class="expertise-timeline-content">
+                <h4 class="h4 framework-title">Frameworks & Technologies</h4>
+                <div class="framework-pills">
+                  <button class="toolBtn">Flutter<img class="icon" src="assets/images/flutter.svg"
+                      alt="Flutter icon"></button>
+                  <button class="toolBtn">React Native<img class="icon" src="assets/images/React Native..png"
+                      alt="React Native icon"></button>
+                  <button class="toolBtn">IOs Native<img class="icon" src="assets/images/ios native.svg"
+                      alt="React Native icon"></button>
+                  <button class="toolBtn">Android Native<img class="icon" src="assets/images/kotlin.svg"
+                      alt="React Native icon"></button>
+
+                  <button class="toolBtn">Expo<img class="icon" src="assets/images/expo.png" alt="Expo icon"></button>
+                  <button class="toolBtn">Dart<img class="icon" src="assets/images/dart.svg" alt="Dart icon"></button>
+                  <button class="toolBtn">JavaScript<img class="icon" src="assets/images/javascript.svg"
+                      alt="JavaScript icon"></button>
+                  <button class="toolBtn">TypeScript<img class="icon" src="assets/images/typeScript.svg"
+                      alt="TypeScript icon"></button>
+
+                </div>
               </div>
-              <h3 class="h3">Mobile Application Development</h3>
+            </div>
+            <div class="expertise-timeline-item">
+              <div class="expertise-timeline-content">
+                <h4 class="h4 framework-title">Plugins</h4>
+                <div class="framework-pills">
+                  <button class="toolBtn">Firebase<img class="icon" src="assets/images/firebase.svg"
+                      alt="Firebase icon"></button>
+                  <button class="toolBtn">OneSignal Notifications<img class="icon" src="assets/images/onesignal.svg"
+                      alt="OneSignal Notifications icon"></button>
+                  <button class="toolBtn">In-App-Purchase<img class="icon" src="assets/images/iap.svg"
+                      alt="In-App-Purchase icon"></button>
+                  <button class="toolBtn">Google Map<img class="icon" src="assets/images/google-map.svg"
+                      alt="Google Map icon"></button>
+                  <button class="toolBtn">Social Login<img class="icon" src="assets/images/social-login.png"
+                      alt="Social Login icon"></button>
+                  <button class="toolBtn">Google Analytics<img class="icon" src="assets/images/firebase.svg"
+                      alt="Json Serializable icon"></button>
+                  <button class="toolBtn">Notifications<img class="icon" src="assets/images/notification.png"
+                      alt="Notifications icon"></button>
+                  <button class="toolBtn">Localization<img class="icon" src="assets/images/json.svg"
+                      alt="Notifications icon"></button>
+                </div>
+              </div>
             </div>
 
-            <div class="expertise-timeline-list">
-              <div class="expertise-timeline-item">
-                <div class="expertise-timeline-content">
-                  <h4 class="h4 framework-title">Frameworks & Technologies</h4>
-                  <div class="framework-pills">
-                  <button class="toolBtn">Flutter<img class="icon" src="assets/images/flutter.svg" alt="Flutter icon" ></button>
-                   <button class="toolBtn">React Native<img class="icon" src="assets/images/React Native..png" alt="React Native icon" ></button>
-                  <button class="toolBtn">IOs Native<img class="icon" src="assets/images/ios native.svg" alt="React Native icon" ></button>
-                   <button class="toolBtn">Android Native<img class="icon" src="assets/images/kotlin.svg" alt="React Native icon" ></button>
+            <div class="expertise-timeline-item">
+              <div class="expertise-timeline-content">
+                <h4 class="h4 framework-title">API Services</h4>
+                <div class="framework-pills">
+                  <button class="toolBtn">REST API<img class="icon" src="assets/images/api.svg"
+                      alt="REST API icon"></button>
+                  <button class="toolBtn">Context API<img class="icon" src="assets/images/context API.png"
+                      alt="Context API icon"></button>
+                  <button class="toolBtn">GraphQL<img class="icon" src="assets/images/graphql.svg"
+                      alt="GraphQL icon"></button>
+                </div>
+              </div>
+            </div>
+            <div class="expertise-timeline-item">
+              <div class="expertise-timeline-content">
+                <h4 class="h4 framework-title">State Management</h4>
+                <div class="framework-pills">
+                  <button class="toolBtn">Provider<img class="icon" src="assets/images/provider.png"
+                      alt="Provider icon"></button>
+                  <button class="toolBtn">BLoC Pattern<img class="icon" src="assets/images/Bloc.png"
+                      alt="BLoC icon"></button>
+                  <button class="toolBtn">GetX<img class="icon" src="assets/images/GetX.png" alt="GetX icon"></button>
+                  <button class="toolBtn">Redux<img class="icon" src="assets/images/Redux.png"
+                      alt="Redux icon"></button>
+                  <button class="toolBtn">Zustand<img class="icon" src="assets/images/zustand.svg"
+                      alt="Zustand icon"></button>
+                  <button class="toolBtn">Context Api<img class="icon" src="assets/images/React Native..png"
+                      alt="Context icon"></button>
+                </div>
+              </div>
+            </div>
+            <div class="expertise-timeline-item">
+              <div class="expertise-timeline-content">
+                <h4 class="h4 framework-title">Database</h4>
+                <div class="framework-pills">
+                  <button class="toolBtn">Async Storage<img class="icon" src="assets/images/local-database.png"
+                      alt="Local Storage icon"></button>
+                  <button class="toolBtn">MMKV<img class="icon" src="assets/images/objectbox.png"
+                      alt="ObjectBox icon"></button>
+                  <button class="toolBtn">Hive<img class="icon" src="assets/images/HIVE..png" alt="Hive icon"></button>
+                  <button class="toolBtn">Supabase<img class="icon" src="assets/images/supabase.svg"
+                      alt="Supabase icon"></button>
+                  <button class="toolBtn">Firebase realtime database<img class="icon"
+                      src="assets/images/firebase-realtime.png" alt="Firebase realtime database icon"></button>
+                  <button class="toolBtn">Firebase Firestore<img class="icon" src="assets/images/firebase-firestore.png"
+                      alt="Firebase Firestore icon"></button>
+                  <button class="toolBtn">Sqlite<img class="icon" src="assets/images/sqlite.svg"
+                      alt="Sqlite icon"></button>
 
-                   <button class="toolBtn">Expo<img class="icon" src="assets/images/expo.png" alt="Expo icon" ></button>
-                   <button class="toolBtn">Dart<img class="icon" src="assets/images/dart.svg" alt="Dart icon" ></button>
-                   <button class="toolBtn">JavaScript<img class="icon" src="assets/images/javascript.svg" alt="JavaScript icon" ></button>
-                   <button class="toolBtn">TypeScript<img class="icon" src="assets/images/typeScript.svg" alt="TypeScript icon" ></button>                 
-                      
-                  </div>
                 </div>
               </div>
-               <div class="expertise-timeline-item">
-                <div class="expertise-timeline-content">
-                  <h4 class="h4 framework-title">Plugins</h4>
-                  <div class="framework-pills">
-                    <button class="toolBtn">Firebase<img class="icon" src="assets/images/firebase.svg" alt="Firebase icon"></button>
-                    <button class="toolBtn">OneSignal Notifications<img class="icon" src="assets/images/onesignal.svg" alt="OneSignal Notifications icon"></button>
-                    <button class="toolBtn">In-App-Purchase<img class="icon" src="assets/images/iap.svg" alt="In-App-Purchase icon"></button>
-                    <button class="toolBtn">Google Map<img class="icon" src="assets/images/google-map.svg" alt="Google Map icon"></button>
-                    <button class="toolBtn">Social Login<img class="icon" src="assets/images/social-login.png" alt="Social Login icon"></button>
-                   <button class="toolBtn">Google Analytics<img class="icon" src="assets/images/firebase.svg" alt="Json Serializable icon"></button>
-                    <button class="toolBtn">Notifications<img class="icon" src="assets/images/notification.png" alt="Notifications icon"></button>
-                    <button class="toolBtn">Localization<img class="icon" src="assets/images/json.svg" alt="Notifications icon"></button>
-                  </div>
+            </div>
+            <div class="expertise-timeline-item">
+              <div class="expertise-timeline-content">
+                <h4 class="h4 framework-title">Payment Gateway</h4>
+                <div class="framework-pills">
+                  <button class="toolBtn">Stripe<img class="icon" src="assets/images/stripe.svg"
+                      alt="Stripe icon"></button>
+                  <button class="toolBtn">In App Purchase<img class="icon" src="assets/images/iap.svg"
+                      alt="In App Purchase icon"></button>
+                  <button class="toolBtn">Paypal<img class="icon" src="assets/images/paypal.png"
+                      alt="Paypal icon"></button>
+                  <button class="toolBtn">Google Pay<img class="icon" src="assets/images/google-pay.svg"
+                      alt="Google Pay icon"></button>
+                  <button class="toolBtn">Apple Pay<img class="icon" src="assets/images/apple pay.png"
+                      alt="Apple Pay icon"></button>
+                  <button class="toolBtn">Wallet Connect Pay<img class="icon" src="assets/images/wallet connect.png"
+                      alt="wallet connect icon"></button>
                 </div>
               </div>
+            </div>
 
-               <div class="expertise-timeline-item">
-                <div class="expertise-timeline-content">
-                  <h4 class="h4 framework-title">API Services</h4>
-                  <div class="framework-pills">
-                    <button class="toolBtn">REST API<img class="icon" src="assets/images/api.svg" alt="REST API icon"></button>
-                  <button class="toolBtn">Context API<img class="icon" src="assets/images/context API.png" alt="Context API icon"></button>
-                       <button class="toolBtn">GraphQL<img class="icon" src="assets/images/graphql.svg" alt="GraphQL icon"></button>  
-                </div>
-                </div>
-              </div>
-              <div class="expertise-timeline-item">
-                <div class="expertise-timeline-content">
-                  <h4 class="h4 framework-title">State Management</h4>
-                  <div class="framework-pills">
-<button class="toolBtn">Provider<img class="icon" src="assets/images/provider.png" alt="Provider icon"></button>
-<button class="toolBtn">BLoC Pattern<img class="icon" src="assets/images/Bloc.png" alt="BLoC icon"></button>
-<button class="toolBtn">GetX<img class="icon" src="assets/images/GetX.png" alt="GetX icon"></button>
-<button class="toolBtn">Redux<img class="icon" src="assets/images/Redux.png" alt="Redux icon"></button>
-<button class="toolBtn">Zustand<img class="icon" src="assets/images/zustand.svg" alt="Zustand icon"></button>
-<button class="toolBtn">Context Api<img class="icon" src="assets/images/React Native..png" alt="Context icon"></button>
-                  </div>
+            <div class="expertise-timeline-item">
+              <div class="expertise-timeline-content">
+                <h4 class="h4 framework-title">Deployment</h4>
+                <div class="framework-pills">
+                  <button class="toolBtn">Google Play Store<img class="icon" src="assets/images/google-play.png"
+                      alt="Google Play Stroe icon"></button>
+                  <button class="toolBtn">App Stroe<img class="icon" src="assets/images/app-store.svg"
+                      alt="App Stroe icon"></button>
+                  <button class="toolBtn">Web<img class="icon" src="assets/images/web.svg" alt="Web icon"></button>
+                  <button class="toolBtn">Microsoft Store<img class="icon" src="assets/images/microsoft-store.png"
+                      alt="Microsoft Store icon"></button>
+                  <button class="toolBtn">Linux<img class="icon" src="assets/images/linux.svg"
+                      alt="Linux icon"></button>
                 </div>
               </div>
-<div class="expertise-timeline-item">
-                <div class="expertise-timeline-content">
-                  <h4 class="h4 framework-title">Database</h4>
-                  <div class="framework-pills">
-<button class="toolBtn">Async Storage<img class="icon" src="assets/images/local-database.png" alt="Local Storage icon"></button>
-<button class="toolBtn">MMKV<img class="icon" src="assets/images/objectbox.png" alt="ObjectBox icon"></button>
-<button class="toolBtn">Hive<img class="icon" src="assets/images/HIVE..png" alt="Hive icon"></button>
-<button class="toolBtn">Supabase<img class="icon" src="assets/images/supabase.svg" alt="Supabase icon"></button>
-<button class="toolBtn">Firebase realtime database<img class="icon" src="assets/images/firebase-realtime.png" alt="Firebase realtime database icon"></button>
-<button class="toolBtn">Firebase Firestore<img class="icon" src="assets/images/firebase-firestore.png" alt="Firebase Firestore icon"></button>
-<button class="toolBtn">Sqlite<img class="icon" src="assets/images/sqlite.svg" alt="Sqlite icon"></button>
+            </div>
 
-                  </div>
-                </div>
-              </div>
-              <div class="expertise-timeline-item">
-                <div class="expertise-timeline-content">
-                  <h4 class="h4 framework-title">Payment Gateway</h4>
-                  <div class="framework-pills">
-<button class="toolBtn">Stripe<img class="icon" src="assets/images/stripe.svg" alt="Stripe icon"></button>
-<button class="toolBtn">In App Purchase<img class="icon" src="assets/images/iap.svg" alt="In App Purchase icon"></button>
-<button class="toolBtn">Paypal<img class="icon" src="assets/images/paypal.png" alt="Paypal icon"></button>
-<button class="toolBtn">Google Pay<img class="icon" src="assets/images/google-pay.svg" alt="Google Pay icon"></button>
-<button class="toolBtn">Apple Pay<img class="icon" src="assets/images/apple pay.png" alt="Apple Pay icon"></button>
-<button class="toolBtn">Wallet Connect Pay<img class="icon" src="assets/images/wallet connect.png" alt="wallet connect icon"></button>
-                  </div>
-                </div>
-              </div>
-
-               <div class="expertise-timeline-item">
-                <div class="expertise-timeline-content">
-                  <h4 class="h4 framework-title">Deployment</h4>
-                  <div class="framework-pills">
-<button class="toolBtn">Google Play Store<img class="icon" src="assets/images/google-play.png" alt="Google Play Stroe icon"></button>
-<button class="toolBtn">App Stroe<img class="icon" src="assets/images/app-store.svg" alt="App Stroe icon"></button>
-<button class="toolBtn">Web<img class="icon" src="assets/images/web.svg" alt="Web icon"></button>
-<button class="toolBtn">Microsoft Store<img class="icon" src="assets/images/microsoft-store.png" alt="Microsoft Store icon"></button>
-<button class="toolBtn">Linux<img class="icon" src="assets/images/linux.svg" alt="Linux icon"></button>
-                  </div>
-                </div>
-              </div>
-
-                    <!-- <div class="expertise-timeline-item">
+            <!-- <div class="expertise-timeline-item">
                 <div class="expertise-timeline-content">
                   <h4 class="h4 framework-title">Code Review</h4>
                   <div class="framework-pills">
@@ -946,530 +974,410 @@ development skills in React Native.
                   </div>
                 </div>
               </div> -->
-                      <div class="expertise-timeline-item">
-                <div class="expertise-timeline-content">
-                  <h4 class="h4 framework-title">Tools & Utilities</h4>
-                  <div class="framework-pills">
-<button class="toolBtn">Android Studio<img class="icon" src="assets/images/android-studio.svg" alt="Android Studio icon"></button>
-<button class="toolBtn">Visual Studio Code<img class="icon" src="assets/images/visual-studio-code.svg" alt="Visual Studio Code icon"></button>
-<button class="toolBtn">XCode<img class="icon" src="assets/images/xcode.svg" alt="XCode icon"></button>
-<button class="toolBtn">Postman<img class="icon" src="assets/images/postman-icon.svg" alt="Postman icon"></button>
-<button class="toolBtn">Cursor<img class="icon" src="assets/images/cursor-ai.svg" alt="Postman icon"></button>
-                  </div>
-                </div>
-              </div>
-                                    <div class="expertise-timeline-item">
-                <div class="expertise-timeline-content">
-                  <h4 class="h4 framework-title">Project Management Tools</h4>
-                  <div class="framework-pills">
-<button class="toolBtn">Asana<img class="icon" src="assets/images/asana.svg" alt="asana icon"></button>
-<button class="toolBtn">Slack<img class="icon" src="assets/images/slack.svg" alt="Slack icon"></button>
-<button class="toolBtn">Jira<img class="icon" src="assets/images/jira.svg" alt="Jira icon"></button>
-<button class="toolBtn">Trello<img class="icon" src="assets/images/trello.svg" alt="Trello icon"></button>
-<button class="toolBtn">ClickUp<img class="icon" src="assets/images/clickup.svg" alt="Trello icon"></button>
-                  </div>
-                </div>
-              </div>
-                          <div class="expertise-timeline-item">
-                <div class="expertise-timeline-content">
-                  <h4 class="h4 framework-title">Testing</h4>
-                  <div class="framework-pills">
-<button class="toolBtn">Widget Tests<img class="icon" src="assets/images/widget.png" alt="Widget Tests icon"></button>
-<button class="toolBtn">Unit Tests<img class="icon" src="assets/images/unit-testing.png" alt="Unit Tests icon"></button>
-<button class="toolBtn">Integration Tests<img class="icon" src="assets/images/integration-testing.webp" alt="Integration Tests icon"></button>
-<button class="toolBtn">Jest<img class="icon" src="assets/images/jest.svg" alt="Jest Tests icon"></button>
-  
-</div>
-                </div>
-              </div>
-                          <div class="expertise-timeline-item">
-                <div class="expertise-timeline-content">
-                  <h4 class="h4 framework-title">Version Control</h4>
-                  <div class="framework-pills">
-<button class="toolBtn">Git<img class="icon" src="assets/images/git.svg" alt="Git icon"></button>
-<button class="toolBtn">Github<img class="icon" src="assets/images/github.svg" alt="Github icon"></button>
-<button class="toolBtn">BitBucket<img class="icon" src="assets/images/bitbucket.svg" alt="BitBucket icon"></button>
-                  </div>
-                </div>
-              </div>
-<div class="expertise-timeline-item">
-                <div class="expertise-timeline-content">
-                  <h4 class="h4 framework-title">UI/UX Designing Tools</h4>
-                  <div class="framework-pills">
-<button class="toolBtn">Figma<img class="icon" src="assets/images/figma.svg" alt="Figma icon"></button>
-<button class="toolBtn">Framer<img class="icon" src="assets/images/framer.svg" alt="Framer icon"></button>
-<button class="toolBtn">Canva<img class="icon" src="assets/images/canva.svg" alt="Canva icon"></button>
-<button class="toolBtn">Whimsical<img class="icon" src="assets/images/whimsical.png" alt="Whimsical icon"></button>
-                  </div>
-                </div>
-              </div>
-              <div class="expertise-timeline-item">
-                <div class="expertise-timeline-content">
-                  <h4 class="h4 framework-title">Crash Reporting</h4>
-                  <div class="framework-pills">
-<button class="toolBtn">Firebase Crashlytics<img class="icon" src="assets/images/firebase-crashlytics.png" alt="Firebase Crashlytics icon"></button>
-<button class="toolBtn">Sentry<img class="icon" src="assets/images/sentry.svg" alt="Sentry icon"></button>
-                  </div>
-                </div>
-              </div>
-                      <div class="expertise-timeline-item">
-                <div class="expertise-timeline-content">
-                  <h4 class="h4 framework-title">Upgrade Services</h4>
-                  <div class="framework-pills">
-<button class="toolBtn">FVM<img class="icon" src="assets/images/fvm.svg" alt="FVM icon"></button>
-<button class="toolBtn">React Native Upgrade<img class="icon" src="assets/images/React Native..png" alt="FVM icon"></button>
-                  </div>
+            <div class="expertise-timeline-item">
+              <div class="expertise-timeline-content">
+                <h4 class="h4 framework-title">Tools & Utilities</h4>
+                <div class="framework-pills">
+                  <button class="toolBtn">Android Studio<img class="icon" src="assets/images/android-studio.svg"
+                      alt="Android Studio icon"></button>
+                  <button class="toolBtn">Visual Studio Code<img class="icon" src="assets/images/visual-studio-code.svg"
+                      alt="Visual Studio Code icon"></button>
+                  <button class="toolBtn">XCode<img class="icon" src="assets/images/xcode.svg"
+                      alt="XCode icon"></button>
+                  <button class="toolBtn">Postman<img class="icon" src="assets/images/postman-icon.svg"
+                      alt="Postman icon"></button>
+                  <button class="toolBtn">Cursor<img class="icon" src="assets/images/cursor-ai.svg"
+                      alt="Postman icon"></button>
                 </div>
               </div>
             </div>
-          </section>
+            <div class="expertise-timeline-item">
+              <div class="expertise-timeline-content">
+                <h4 class="h4 framework-title">Project Management Tools</h4>
+                <div class="framework-pills">
+                  <button class="toolBtn">Asana<img class="icon" src="assets/images/asana.svg"
+                      alt="asana icon"></button>
+                  <button class="toolBtn">Slack<img class="icon" src="assets/images/slack.svg"
+                      alt="Slack icon"></button>
+                  <button class="toolBtn">Jira<img class="icon" src="assets/images/jira.svg" alt="Jira icon"></button>
+                  <button class="toolBtn">Trello<img class="icon" src="assets/images/trello.svg"
+                      alt="Trello icon"></button>
+                  <button class="toolBtn">ClickUp<img class="icon" src="assets/images/clickup.svg"
+                      alt="Trello icon"></button>
+                </div>
+              </div>
+            </div>
+            <div class="expertise-timeline-item">
+              <div class="expertise-timeline-content">
+                <h4 class="h4 framework-title">Testing</h4>
+                <div class="framework-pills">
+                  <button class="toolBtn">Widget Tests<img class="icon" src="assets/images/widget.png"
+                      alt="Widget Tests icon"></button>
+                  <button class="toolBtn">Unit Tests<img class="icon" src="assets/images/unit-testing.png"
+                      alt="Unit Tests icon"></button>
+                  <button class="toolBtn">Integration Tests<img class="icon"
+                      src="assets/images/integration-testing.webp" alt="Integration Tests icon"></button>
+                  <button class="toolBtn">Jest<img class="icon" src="assets/images/jest.svg"
+                      alt="Jest Tests icon"></button>
 
-         
-        </article>
+                </div>
+              </div>
+            </div>
+            <div class="expertise-timeline-item">
+              <div class="expertise-timeline-content">
+                <h4 class="h4 framework-title">Version Control</h4>
+                <div class="framework-pills">
+                  <button class="toolBtn">Git<img class="icon" src="assets/images/git.svg" alt="Git icon"></button>
+                  <button class="toolBtn">Github<img class="icon" src="assets/images/github.svg"
+                      alt="Github icon"></button>
+                  <button class="toolBtn">BitBucket<img class="icon" src="assets/images/bitbucket.svg"
+                      alt="BitBucket icon"></button>
+                </div>
+              </div>
+            </div>
+            <div class="expertise-timeline-item">
+              <div class="expertise-timeline-content">
+                <h4 class="h4 framework-title">UI/UX Designing Tools</h4>
+                <div class="framework-pills">
+                  <button class="toolBtn">Figma<img class="icon" src="assets/images/figma.svg"
+                      alt="Figma icon"></button>
+                  <button class="toolBtn">Framer<img class="icon" src="assets/images/framer.svg"
+                      alt="Framer icon"></button>
+                  <button class="toolBtn">Canva<img class="icon" src="assets/images/canva.svg"
+                      alt="Canva icon"></button>
+                  <button class="toolBtn">Whimsical<img class="icon" src="assets/images/whimsical.png"
+                      alt="Whimsical icon"></button>
+                </div>
+              </div>
+            </div>
+            <div class="expertise-timeline-item">
+              <div class="expertise-timeline-content">
+                <h4 class="h4 framework-title">Crash Reporting</h4>
+                <div class="framework-pills">
+                  <button class="toolBtn">Firebase Crashlytics<img class="icon"
+                      src="assets/images/firebase-crashlytics.png" alt="Firebase Crashlytics icon"></button>
+                  <button class="toolBtn">Sentry<img class="icon" src="assets/images/sentry.svg"
+                      alt="Sentry icon"></button>
+                </div>
+              </div>
+            </div>
+            <div class="expertise-timeline-item">
+              <div class="expertise-timeline-content">
+                <h4 class="h4 framework-title">Upgrade Services</h4>
+                <div class="framework-pills">
+                  <button class="toolBtn">FVM<img class="icon" src="assets/images/fvm.svg" alt="FVM icon"></button>
+                  <button class="toolBtn">React Native Upgrade<img class="icon" src="assets/images/React Native..png"
+                      alt="FVM icon"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-        <!--
+
+      </article>
+
+      <!--
         - #PORTFOLIO
       -->
 
-        <article class="portfolio" data-page="portfolio">
-          <header>
-            <h2 class="h2 article-title">Portfolio</h2>
-          </header>
+      <article class="portfolio" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
 
-          <section class="projects">
-            <ul class="filter-list">
-              <li class="filter-item">
-                <button class="active" data-filter-btn>All</button>
+        <section class="projects">
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>React Native</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Flutter</button>
+            </li>
+          </ul>
+
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item>All</button>
               </li>
-              <li class="filter-item">
-                <button data-filter-btn>React Native</button>
+              <li class="select-item">
+                <button data-select-item>React Native</button>
               </li>
-              <li class="filter-item">
-                <button data-filter-btn>Flutter</button>
+              <li class="select-item">
+                <button data-select-item>Flutter</button>
               </li>
             </ul>
+          </div>
 
-            <div class="filter-select-box">
-              <button class="filter-select" data-select>
-                <div class="select-value" data-selecct-value
-                  >Select category</div
-                >
-                <div class="select-icon">
-                  <ion-icon name="chevron-down"></ion-icon>
+          <ul class="project-list">
+            <li class="project-item active" data-filter-item data-category="React Native" data-title="Chughtailab"
+              data-description="A comprehensive healthcare application built with React Native that allows users to book lab tests, view reports, and manage appointments. The app features real-time notifications, secure payment integration, and a user-friendly interface for accessing medical services."
+              data-image="./assets/images/chughtailab.png">
+              <a href="javascript:void(0);" onclick="event.preventDefault();">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/chughtailab.png" alt="Chughtailab" loading="lazy" />
+                </figure>
+              </a>
+              <h3 class="project-title">Chughtailab</h3>
+              <p class="project-category">Health care application</p>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="React Native"
+              data-title="Nuriq (Tax Consultancy)"
+              data-description="An innovative AI-powered chatbot application built for tax consultation. This React Native app uses natural language processing to provide users with accurate tax advice, filing assistance, and personalized financial guidance. Features include document scanning, tax calculation, and secure user authentication."
+              data-image="./assets/images/nuriq.png">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
                 </div>
-              </button>
+                <img src="./assets/images/nuriq.png" alt="Nuriq" loading="lazy" />
+              </figure>
+              <h3 class="project-title">Nuriq (Tax Consultancy)</h3>
+              <p class="project-category">AI Chatbot for Tax Consultation</p>
+            </li>
 
-              <ul class="select-list">
-                <li class="select-item">
-                  <button data-select-item>All</button>
-                </li>
-                <li class="select-item">
-                  <button data-select-item>React Native</button>
-                </li>
-                <li class="select-item">
-                  <button data-select-item>Flutter</button>
-                </li>
-              </ul>
-            </div>
+            <li class="project-item active" data-filter-item data-category="React Native" data-title="Twocents"
+              data-description="A SEO-friendly health web application built with React Native for web. This platform allows users to share their opinions and experiences about health topics, creating a community-driven knowledge base. The app features content moderation, user profiles, search functionality, and responsive design for optimal viewing on all devices."
+              data-image="./assets/images/twocents.png">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="./assets/images/twocents.png" alt="Twocents" loading="lazy" />
+              </figure>
+              <h3 class="project-title">Twocents</h3>
+              <p class="project-category">SEO-Friendly Health Web App</p>
+            </li>
 
-            <ul class="project-list">
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="React Native"
-              >
-                <a href="http://mybizly.com" target="_blank">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img
-                      src="./assets/images/chughtailab.png"
-                      alt="Bizly"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <h3 class="project-title">Chughtailab</h3>
-                  <p class="project-category">Health care application</p>
-                </a>
-              </li>
+            <li class="project-item active" data-filter-item data-category="React Native" data-title="DoCurious"
+              data-description="A challenge-based platform developed with React Native that encourages users to participate in health and wellness challenges. The application features a gamified approach to health with daily challenges, progress tracking, social sharing, and reward systems. Users can join community challenges or create personalized ones based on their health goals."
+              data-image="./assets/images/wellme.png">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="./assets/images/wellme.png" alt="DoCurious" loading="lazy" />
+              </figure>
+              <h3 class="project-title">DoCurious</h3>
+              <p class="project-category">Challenge-Based Platform</p>
+            </li>
 
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="React Native"
-              >
-                <a href="https://hivetax.ai/" target="_blank">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img
-                      src="./assets/images/nuriq.png"
-                      alt="Hive"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <h3 class="project-title">Nuriq (Tax Consultancy)</h3>
-                  <p class="project-category"
-                    >AI Chatbot for Tax Consultation</p
-                  >
-                </a>
-                <!-- <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img
-                    src="./assets/images/hive.png"
-                    alt="Hive"
-                    loading="lazy"
-                  />
-                </figure>
-                <h3 class="project-title">Hive (Tax Consultancy)</h3>
-                <p class="project-category"
-                  >AI Chatbot for Tax Consultation</p
-                > -->
-              </li>
+            <li class="project-item active" data-filter-item data-category="Flutter" data-title="EasyD Digital Signage"
+              data-description="A comprehensive digital signage solution built with Flutter that allows businesses to manage and display content across multiple screens. The application supports remote content management, scheduling, real-time updates, and analytics. It's designed for various industries including retail, hospitality, corporate communications, and public information displays."
+              data-image="./assets/images/easyd.png">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="./assets/images/easyd.png" alt="EasyD Digital Signage" loading="lazy" />
+              </figure>
+              <h3 class="project-title">EasyD Digital Signage</h3>
+              <p class="project-category">Flutter Digital Signage App</p>
+            </li>
 
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="React Native"
-              >
-                <a href="https://homehealthfocus.ai/" target="_blank">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img
-                      src="./assets/images/twocents.png"
-                      alt="Home Health Focus"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <h3 class="project-title">Twocents</h3>
-                  <p class="project-category">SEO-Friendly Health Web App</p>
-                </a>
-              </li>
+            <li class="project-item active" data-filter-item data-category="Flutter"
+              data-title="Society Management System"
+              data-description="A comprehensive Flutter application designed for managing residential communities and societies. This app streamlines community operations with features like resident management, maintenance requests, visitor tracking, payment collection, event management, and community announcements. The intuitive interface makes it easy for both administrators and residents to stay connected and manage community affairs efficiently."
+              data-image="./assets/images/dwiss.png">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="./assets/images/dwiss.png" alt="Society Management System" loading="lazy" />
+              </figure>
+              <h3 class="project-title">Society Management System</h3>
+              <p class="project-category">Flutter Community Management App</p>
+            </li>
 
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="React Native"
-              >
-                <a href="https://dev-portal.docurious.com" target="_blank">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img
-                      src="./assets/images/wellme.png"
-                      alt="DoCurious"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <h3 class="project-title">DoCurious</h3>
-                  <p class="project-category">Challenge-Based Platform</p>
-                </a>
-              </li>
+            <li class="project-item active" data-filter-item data-category="Flutter" data-title="Agrivision"
+              data-description="An innovative Flutter application for the agriculture sector that leverages technology to improve farming practices. The app provides farmers with real-time weather forecasts, crop disease detection using image recognition, market price information, expert advice, and personalized recommendations based on soil conditions and crop types. It also includes features for inventory management, expense tracking, and yield prediction to help farmers maximize their productivity and profits."
+              data-image="./assets/images/warrantee.png">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="./assets/images/warrantee.png" alt="Agrivision" loading="lazy" />
+              </figure>
+              <h3 class="project-title">Agrivision</h3>
+              <p class="project-category">Flutter Agriculture Technology App</p>
+            </li>
 
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="Flutter"
-              >
-                <a href="https://easyd.io/" target="_blank">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img
-                      src="./assets/images/easyd.png"
-                      alt="EasyD Digital Signage"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <h3 class="project-title">EasyD Digital Signage</h3>
-                  <p class="project-category">Flutter Digital Signage App</p>
-                </a>
-              </li>
+            <li class="project-item active" data-filter-item data-category="Flutter" data-title="Food Mamba"
+              data-description="A feature-rich food delivery application built with Flutter that connects users with local restaurants. The app offers a seamless ordering experience with real-time tracking, secure payment options, personalized recommendations, and loyalty rewards. Restaurant owners can manage their menus, track orders, and analyze sales data through a dedicated dashboard. The app's responsive design ensures a consistent experience across all devices."
+              data-image="./assets/images/food-mamba.png">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="./assets/images/food-mamba.png" alt="Food Mamba" loading="lazy" />
+              </figure>
+              <h3 class="project-title">Food Mamba</h3>
+              <p class="project-category">Food Delivery App</p>
+            </li>
 
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="Flutter"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img
-                      src="./assets/images/dwiss.png"
-                      alt="Society Management System"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <h3 class="project-title">Society Management System</h3>
-                  <p class="project-category">Flutter Community Management App</p>
-                </a>
-              </li>
+            <li class="project-item active" data-filter-item data-category="web development"
+              data-title="Dictator NFT Project"
+              data-description="A blockchain-based NFT platform that allows users to create, buy, sell, and trade unique digital assets. Built with modern web technologies, this platform features a secure wallet integration, auction system, royalty distribution for creators, and detailed analytics for collectors. The platform supports multiple blockchain networks and provides a user-friendly interface for both experienced crypto enthusiasts and newcomers to the NFT space."
+              data-image="./assets/images/nft.png">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="./assets/images/nft.png" alt="Dictator NFT Project" loading="lazy" />
+              </figure>
+              <h3 class="project-title">Dictator NFT Project</h3>
+              <p class="project-category">Blockchain-Based NFT Platform</p>
+            </li>
 
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="Flutter"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img
-                      src="./assets/images/warrantee.png"
-                      alt="Agrivision"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <h3 class="project-title">Agrivision</h3>
-                  <p class="project-category"
-                    >Flutter Agriculture Technology App</p
-                  >
-                </a>
-              </li>
+            <!-- Mobile Application Projects -->
+            <li class="project-item active" data-filter-item data-category="Flutter" data-title="Food Mamba Mobile App"
+              data-description="A cross-platform food delivery application built with Flutter that provides a seamless ordering experience across iOS and Android devices. The app features an intuitive interface for browsing restaurants, customizing orders, secure payment processing, and real-time delivery tracking. It also includes a rating system, order history, favorite restaurants, and special offers to enhance the user experience."
+              data-image="./assets/images/food-mamba.png">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="./assets/images/food-mamba.png" alt="Food Mamba Mobile App" loading="lazy" />
+              </figure>
+              <h3 class="project-title">Food Mamba Mobile App</h3>
+              <p class="project-category">Cross-Platform Food Delivery App (Flutter)</p>
+            </li>
 
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="Flutter"
-              >
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img
-                    src="./assets/images/food-mamba.png"
-                    alt="Food Mamba"
-                    loading="lazy"
-                  />
-                </figure>
-                <h3 class="project-title">Food Mamba</h3>
-                <p class="project-category">Food Delivery App</p>
-              </li>
+            <li class="project-item active" data-filter-item data-category="React Native"
+              data-title="Society Management Mobile App"
+              data-description="A comprehensive React Native application designed for managing residential communities and housing societies. This mobile app streamlines community operations with features like resident profiles, maintenance requests, visitor management, digital payments, event scheduling, and community announcements. The app includes separate interfaces for residents, administrators, and security personnel to ensure efficient community management."
+              data-image="./assets/images/sms.png">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="./assets/images/sms.png" alt="Society Management Mobile App" loading="lazy" />
+              </figure>
+              <h3 class="project-title">Society Management Mobile App</h3>
+              <p class="project-category">Community Management App (React Native)</p>
+            </li>
 
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img
-                    src="./assets/images/nft.png"
-                    alt="Dictator NFT Project"
-                    loading="lazy"
-                  />
-                </figure>
-                <h3 class="project-title">Dictator NFT Project</h3>
-                <p class="project-category">Blockchain-Based NFT Platform</p>
-              </li>
+            <li class="project-item active" data-filter-item data-category="mobile applications"
+              data-title="Agrivision Mobile App"
+              data-description="A cutting-edge Flutter mobile application for the agriculture sector that helps farmers optimize their farming practices. The app provides real-time weather forecasts, crop disease identification through image recognition, market price information, expert consultation, and personalized recommendations based on soil conditions and crop types. Additional features include inventory management, expense tracking, yield prediction, and a community forum for knowledge sharing among farmers."
+              data-image="./assets/images/agrivision.webp">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="./assets/images/agrivision.webp" alt="Agrivision Mobile App" loading="lazy" />
+              </figure>
+              <h3 class="project-title">Agrivision Mobile App</h3>
+              <p class="project-category">Agriculture Technology Mobile Platform (Flutter)</p>
+            </li>
 
-              <!-- Mobile Application Projects -->
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="Flutter"
-              >
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img
-                    src="./assets/images/food-mamba.png"
-                    alt="Food Mamba Mobile App"
-                    loading="lazy"
-                  />
-                </figure>
-                <h3 class="project-title">Food Mamba Mobile App</h3>
-                <p class="project-category"
-                  >Cross-Platform Food Delivery App (Flutter)</p
-                >
-              </li>
+            <li class="project-item active" data-filter-item data-category="mobile applications"
+              data-title="NFT Marketplace Mobile App"
+              data-description="A React Native mobile application for buying, selling, and trading NFTs (Non-Fungible Tokens) on various blockchain networks. The app features a secure wallet integration, real-time bidding system, NFT creation tools, royalty management for creators, and detailed analytics for collectors. Users can browse collections, follow favorite artists, receive notifications for auctions, and manage their digital assets portfolio all within a sleek, user-friendly interface."
+              data-image="./assets/images/nft.png">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="./assets/images/nft.png" alt="NFT Marketplace Mobile App" loading="lazy" />
+              </figure>
+              <h3 class="project-title">NFT Marketplace Mobile App</h3>
+              <p class="project-category">Blockchain NFT Trading App (React Native)</p>
+            </li>
+          </ul>
+        </section>
+      </article>
 
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="React Native"
-              >
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img
-                    src="./assets/images/sms.png"
-                    alt="Society Management Mobile App"
-                    loading="lazy"
-                  />
-                </figure>
-                <h3 class="project-title">Society Management Mobile App</h3>
-                <p class="project-category"
-                  >Community Management App (React Native)</p
-                >
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="mobile applications"
-              >
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img
-                    src="./assets/images/agrivision.webp"
-                    alt="Agrivision Mobile App"
-                    loading="lazy"
-                  />
-                </figure>
-                <h3 class="project-title">Agrivision Mobile App</h3>
-                <p class="project-category"
-                  >Agriculture Technology Mobile Platform (Flutter)</p
-                >
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="mobile applications"
-              >
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img
-                    src="./assets/images/nft.png"
-                    alt="NFT Marketplace Mobile App"
-                    loading="lazy"
-                  />
-                </figure>
-                <h3 class="project-title">NFT Marketplace Mobile App</h3>
-                <p class="project-category"
-                  >Blockchain NFT Trading App (React Native)</p
-                >
-              </li>
-            </ul>
-          </section>
-        </article>
-
-        <!--
+      <!--
         - #CASE STUDY
       -->
 
-        <article class="case-study" data-page="case-study">
-          <header>
-            <h2 class="h2 article-title" id="case-study-title">Case Study</h2>
-          </header>
-          <section id="case-study-content">
-            <!-- Project details will be injected here -->
-          </section>
-          <button id="back-to-portfolio" class="form-btn" style="margin-top:2em;">
+      <article class="case-study" data-page="case-study">
+        <header>
+          <h2 class="h2 article-title" id="case-study-title">Case Study</h2>
+        </header>
+        <section id="case-study-content">
+
+          <!-- Project details will be injected here -->
+        </section>
+          <button id="back-to-portfolio" class="form-btn" style="margin-top:2em;" type="button">
             <ion-icon name="arrow-back-outline"></ion-icon>
             <span>Back to Portfolio</span>
           </button>
-        </article>
+      </article>
 
-        <!--
+      <!--
         - #CONTACT
       -->
 
-        <article class="contact" data-page="contact">
-          <header>
-            <h2 class="h2 article-title">Contact</h2>
-          </header>
+      <article class="contact" data-page="contact">
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
 
-          <section class="mapbox" data-mapbox>
-            <figure>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10850.747576569946!2d74.27605345!3d31.433936849999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919031b4a73a4d9%3A0x258688c4c93aaeb!2sNawab%20Town%2C%20Lahore%2C%20Pakistan!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-                width="400"
-                height="300"
-                loading="lazy"
-              ></iframe>
-            </figure>
-          </section>
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10850.747576569946!2d74.27605345!3d31.433936849999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919031b4a73a4d9%3A0x258688c4c93aaeb!2sNawab%20Town%2C%20Lahore%2C%20Pakistan!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
 
-          <section class="contact-form">
-            <h3 class="h3 form-title">Get in Touch</h3>
+        <section class="contact-form">
+          <h3 class="h3 form-title">Get in Touch</h3>
 
-            <form
-              action="https://formsubmit.co/nomanakram1999@gmail.com"
-              method="POST"
-              class="form"
-            >
-              <input type="hidden" name="_captcha" value="false" />
+          <form action="https://formsubmit.co/nomanakram1999@gmail.com" method="POST" class="form">
+            <input type="hidden" name="_captcha" value="false" />
 
-              <div class="input-wrapper">
-                <div>
-                  <input
-                    type="text"
-                    id="fullname"
-                    name="fullname"
-                    class="form-input"
-                    placeholder="Full Name"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    class="form-input"
-                    placeholder="Email Address"
-                    required
-                  />
-                </div>
+            <div class="input-wrapper">
+              <div>
+                <input type="text" id="fullname" name="fullname" class="form-input" placeholder="Full Name" required />
               </div>
 
               <div>
-                <textarea
-                  id="message"
-                  name="message"
-                  class="form-input"
-                  placeholder="Your Message"
-                  required
-                ></textarea>
+                <input type="email" id="email" name="email" class="form-input" placeholder="Email Address" required />
               </div>
+            </div>
 
-              <button class="form-btn" type="submit">
-                <ion-icon name="paper-plane"></ion-icon>
-                <span>Send Message</span>
-              </button>
-            </form>
-          </section>
-        </article>
-      </div>
-    </main>
+            <div>
+              <textarea id="message" name="message" class="form-input" placeholder="Your Message" required></textarea>
+            </div>
 
-    <!--
+            <button class="form-btn" type="submit">
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <!--
     - custom js link
   -->
-    <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/script.js"></script>
 
-    <!--
+  <!--
     - ionicon link
   -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>
