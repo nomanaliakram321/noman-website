@@ -1390,7 +1390,8 @@ html {
         min-width: 320px;
     }
     .testimonials-list {
-        grid-template-columns: 1fr 1fr;
+        /* grid-template-columns: 1fr 1fr; */
+        grid-template-columns: auto;
     }
 }
 
